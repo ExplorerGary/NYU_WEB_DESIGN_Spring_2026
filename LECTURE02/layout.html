@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Demo</title>
+
+        <style>
+    /* 整个页面居中 */
+    #wrap {
+        width: 900px;
+        margin: auto;
+        border: 3px solid rgb(255, 255, 255);
+    }
+
+    #navigation a {
+        text-decoration: none;
+        margin: 0 10px;
+        width: 100px;
+    }
+
+    /* 所有主要区域画框 */
+    header, nav, aside, main, footer {
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px;
+        margin: 5px;
+    }
+
+    /* 中间区域：aside + main 横向排列 */
+    .content {
+        display: flex;
+    }
+
+    /* 左边栏 */
+    aside {
+        width: 30%;
+    }
+
+    /* 主内容 */
+    main {
+        width: 70%;
+    }
+
+    .pipboy {
+    filter:
+      brightness(0)
+      saturate(100%)
+      invert(57%)
+      sepia(96%)
+      saturate(470%)
+      hue-rotate(85deg);
+    }
+
+    </style>
+
+</head>
+
+<body style="background-color: black;">
+    <div id="wrap">
+
+        <header>
+            <h1>Welcome to my Personal Site!</h1>
+        </header>
+
+        <nav id = "navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- 中间横向区域 -->
+        <div class="content">
+            <aside>
+                <img src="images/owl.webp" width="100%"/>
+            </aside>
+
+            <main>
+                <h2>My Name is Al</h2>
+                <p>I like games and music...</p>
+            </main>
+        </div>
+        <div>
+            <img src="imgs/pioboy_demo.png" sizes="50%" class = "pipboy"/>
+        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5LV1J6HUFj8?si=FTE59GTpToBogCaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=724654571&bvid=BV1iS4y1S7Qj&cid=1265157637&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        </div>
+        <div>
+            <a href="https://www.bilibili.com">
+                <img src="imgs/bilibiili.svg" width="100px"/>
+            </a>
+        </div>
+        <div>
+            <iframe
+  src="https://drive.google.com/file/d/1pwHNTp6z0usz10Cmbu8bCHxHQXvS404E/preview"
+  width="800"
+  height="450"
+  allow="autoplay"
+  allowfullscreen>
+</iframe>
+
+        </div>
+        <footer>
+            Contact me
+            <a href="https://www.instagram.com">IG</a>
+        </footer>
+
+        <table>
+            <tr>
+                <td rowspan="2">
+                    
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

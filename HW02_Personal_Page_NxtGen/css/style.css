@@ -1,0 +1,82 @@
+/* the finals 's font */
+
+:root {
+  --the-finals-red: #ba3a45;
+  --NYU--violet: #4e1586;
+  --NYU--ultra-violet: #7c22d8;
+  --debug-green: rgb(0, 255, 34);
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--the-finals-red);
+    border: 3px solid var(--debug-green); /* debug */
+}
+
+div header {
+  border: 3px solid var(--debug-green); /* debug */
+}
+
+/* firstline nav */
+.firstline_nav {
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color:black;
+}
+
+.the_finals_logo img{
+    height: 40px;
+    width: auto;
+    margin: 0;
+}
+
+.firstline_nav_tabs {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.nav_item h1 {
+  margin: 0;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: white;
+font-style: italic;
+}
+
+.nav_item a:hover {
+  color: var(--the-finals-red);
+}
+
+.actual_contents {
+  padding: 40px;
+  background-color: var(--the-finals-red);
+}
+
+.big_title h1{
+  font-family: "BebasNeue", sans-serif;
+  font-size: 48px;
+  color: white;
+  margin: 0;
+  word-spacing: normal;
+}
+
