@@ -124,37 +124,6 @@ letter-spacing: 2px;
     border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
-/* .actual_contents{
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.side_panel{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.personal_info {
-  background-color: var(--NYU--violet);
-  color: white;
-  padding: 10px 14px;
-  font-family: "BebasNeue";
-  letter-spacing: 2px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.show video{
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-} */
-
-
 .actual_contents{
   display: grid;
   grid-template-columns: 30% 1fr;
@@ -164,6 +133,16 @@ letter-spacing: 2px;
   padding: 0 20px;
   border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
+
+.info_list{
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 
 .side_panel{
   display: flex;
@@ -184,17 +163,20 @@ letter-spacing: 2px;
 }
 
 .personal_info{
+  list-style: none; 
   background-color: white;
   color: var(--NYU--ultra-violet);
   padding: 10px 14px;
   font-family: "BebasNeue";
   letter-spacing: 2px;
   font-size: xx-large;
+  text-align: center;
 }
 
 .profile_picture{
   height: auto;
   width: 80%;
+  margin: 0 auto;
 }
 
 .show p {
@@ -212,4 +194,43 @@ letter-spacing: 2px;
   margin: 20px 0;
   word-spacing: normal;
   letter-spacing: 2px;
+}
+
+.contact_info_item{
+  list-style: none; 
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: var(--NYU--ultra-violet);
+  line-height: 1.5;
+  
+  display: flex;         
+  align-items: center;   
+  gap: 30px;              
+}
+
+.contact_info_item a img{
+  width: 32px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.project_table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.project_table_header{
+  background-color: var(--NYU--ultra-violet);
+  color: white;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.project_table_row{
+  background-color: whitesmoke;
+  border: 3px solid gray;
+  color: var(--NYU--ultra-violet);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
 }
