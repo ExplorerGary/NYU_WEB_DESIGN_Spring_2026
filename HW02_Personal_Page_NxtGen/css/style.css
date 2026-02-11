@@ -14,7 +14,7 @@
   font-style: normal;
 }
 
-html, body {
+html, body{
   width: 100%;
   height: 100%;
   margin: 0;
@@ -24,11 +24,15 @@ html, body {
 .wrap {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--the-finals-red);
+    background-color: white;
     border: 3px solid var(--debug-green); /* debug */
 }
 
-div header {
+div header{
+  border: 3px solid var(--debug-green); /* debug */
+}
+
+div footer{
   border: 3px solid var(--debug-green); /* debug */
 }
 
@@ -38,13 +42,16 @@ div header {
   align-items: center;      
   justify-content: space-between;
   padding: 20px 40px;
-  background-color:black;
+  background-color: var(--NYU--violet);
+  border: 3px solid var(--debug-green); /* debug */
+
 }
 
 .the_finals_logo img{
     height: 40px;
     width: auto;
     margin: 0;
+    border: 3px solid var(--debug-green); /* debug */
 }
 
 .firstline_nav_tabs {
@@ -52,31 +59,66 @@ div header {
     gap: 40px;
     justify-content: flex-end; 
     align-items: center;
+    border: 3px solid var(--debug-green); /* debug */
+
 }
 .nav_item h1 {
   margin: 0;
+  border: 3px solid var(--debug-green); /* debug */
+
 }
 
 .nav_item a {
   text-decoration: none;
   color: white;
 font-style: italic;
+letter-spacing: 2px;
 }
 
 .nav_item a:hover {
-  color: var(--the-finals-red);
+  color: var(--NYU--ultra-violet);
 }
 
 .actual_contents {
   padding: 40px;
-  background-color: var(--the-finals-red);
+  background-color: white;
+}
+.big_title{
+      border: 3px solid var(--debug-green); /* debug */
 }
 
 .big_title h1{
   font-family: "BebasNeue", sans-serif;
   font-size: 48px;
-  color: white;
+  color: var(--NYU--ultra-violet);
   margin: 0;
   word-spacing: normal;
+  letter-spacing: 2px;
 }
 
+/* footer bar */
+.page_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--NYU--violet);   /* 和顶部一致 */
+    padding: 20px 40px;
+    margin-top: 80px;
+}
+
+/* 左侧 NYUSH logo */
+.page_footer_NYUSH img {
+    height: 50px;
+    width: auto;
+    border: 3px solid var(--debug-green); /* debug */
+}
+
+.page_footer_word {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: italic;
+    border: 3px solid var(--debug-green); /* debug */
+}
