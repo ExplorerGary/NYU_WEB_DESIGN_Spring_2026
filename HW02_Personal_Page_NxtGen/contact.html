@@ -40,31 +40,18 @@
                         <h1>Projects</h1>
                     </a>
                 </div>
-        </nav>
+            </nav>
         </div> <!-- end of firstline_nav -->
         <div>
-        <header class = "big_title">
-                <h1>Contact Me</h1>
-        </header>
+            <header class = "big_title">
+                    <h1>Contact Me</h1>
+            </header>
         </div>
         <div class = "actual_contents">
             <!-- side panel -->
             <div class="side_panel">
-                <img src="images/qilin.png" alt="placeholder" class="profile_picture">
-                <li class = personal_info>Junior @ <a href="https://shanghai.nyu.edu/" target="_blank" style="color: var(--NYU--ultra-violet);text-decoration: none;">NYU Shanghai</a></li>
-                <li class = personal_info>Computer Science Major</li>
-                <li class = personal_info>Data Science Minor</li>
-                <li class = personal_info><a href = "project.html" style="color: var(--NYU--ultra-violet);text-decoration: none;">An Early-Stage Researcher</a></li>
-            </div>
-            <!-- show -->
-            <div class = "show">
-                <h1>Wanna Make Friends?</h1>
-                <p style="font-size: 28px; line-height: 1.6;">
-                    There are multiple ways to contact me! I am always open to making new friends and connecting with people who share similar interests with me. Click on the icons to reach out. Looking forward to hearing from you!
-                </p>
-                <ul class = "contact_info_list">
-                    <!-- gmail; linkedin; github; ins -->
-                     <!-- a contact_info_item are infact a word and a svg with an external link -->
+                <img class="profile_picture" src="images/qilin.png" alt="placeholder">
+                <ul>
                     <li class = "contact_info_item">
                         Gmail <a href = "mailto:zg2598@nyu.edu">
                             <img src="images/gmail.svg" alt="gmail logo" class="contact_info_icon">
@@ -86,6 +73,48 @@
                         </a>
                     </li>
                 </ul>
+
+
+            </div>
+            <!-- show -->
+            <div class = "show">
+                <h1>Wanna Make Friends?</h1>
+                <p style="font-size: 28px; line-height: 1.6;">
+                    There are multiple ways to contact me! I am always open to making new friends and connecting with people who share similar interests with me. Click on the icons to reach out or use the following table. Looking forward to hearing from you!
+                </p>
+                
+                <form action="thankyou.html">
+                    <table class = "contact_table">
+                        <tr class = "contact_table_row">
+                            <td colspan="2"><h3>Please fill out the form to message me</h3></td>
+                        </tr>
+                            <tr class = "contact_table_row">
+                        <td>
+                            Select a topic
+                        </td>
+                        <td>
+                            <select name="topic">
+                                <option value="null">--select one--</option>
+                                <option value="steam">Playing Games with Me?</option>
+                                <option value="CSS">Work on Projects with Me?</option>
+                                <option value="JS">General Inquiries about Me?</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>
+                            <textarea name="message" cols="40" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="reset" value="Clear Form"/>
+                            <input type="submit" value="Submit"/>
+                        </td>
+                    </tr>
+                    </table>
+                </form>
             </div>
         </div>
         <div>
