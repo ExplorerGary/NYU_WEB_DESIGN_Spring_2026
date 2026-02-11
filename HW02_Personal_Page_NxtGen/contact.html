@@ -88,31 +88,35 @@
                         <tr class = "contact_table_row">
                             <td colspan="2"><h3>Please fill out the form to message me</h3></td>
                         </tr>
-                            <tr class = "contact_table_row">
-                        <td>
-                            Select a topic
-                        </td>
-                        <td>
-                            <select name="topic">
-                                <option value="null">--select one--</option>
-                                <option value="steam">Playing Games with Me?</option>
-                                <option value="CSS">Work on Projects with Me?</option>
-                                <option value="JS">General Inquiries about Me?</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Message</td>
-                        <td>
-                            <textarea name="message" cols="40" rows="10"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="reset" value="Clear Form"/>
-                            <input type="submit" value="Submit"/>
-                        </td>
-                    </tr>
+
+                        <tr class = "contact_table_row">
+                            <td>
+                                Select a topic
+                            </td>
+
+                            <td>
+                                <select class = 'topic_select' name="topic">
+                                    <option value="null">--select one--</option>
+                                    <option value="steam">Playing Games with Me?</option>
+                                    <option value="projects">Work on Projects with Me?</option>
+                                    <option value="general">General Inquiries about Me?</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Input your Message</td>
+                            <td>
+                                <textarea name="message" cols="40" rows="10"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="text-align: right;">
+                                <input class = "interaction_button" type="reset" value="Clear Form"/>
+                                <input class = "interaction_button" type="submit" value="Submit"/>
+                            </td>
+                        </tr>
                     </table>
                 </form>
             </div>
