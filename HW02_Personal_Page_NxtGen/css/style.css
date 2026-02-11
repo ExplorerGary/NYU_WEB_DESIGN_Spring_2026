@@ -1,6 +1,7 @@
 /* the finals 's font */
 
 :root {
+  --debug: 0;
   --the-finals-red: #ba3a45;
   --NYU--violet: #4e1586;
   --NYU--ultra-violet: #7c22d8;
@@ -25,15 +26,15 @@ html, body{
     width: 100%;
     min-height: 100vh;
     background-color: white;
-    border: 3px solid var(--debug-green); /* debug */
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 div header{
-  border: 3px solid var(--debug-green); /* debug */
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 div footer{
-  border: 3px solid var(--debug-green); /* debug */
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 /* firstline nav */
@@ -43,7 +44,7 @@ div footer{
   justify-content: space-between;
   padding: 20px 40px;
   background-color: var(--NYU--violet);
-  border: 3px solid var(--debug-green); /* debug */
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 
 }
 
@@ -51,7 +52,7 @@ div footer{
     height: 40px;
     width: auto;
     margin: 0;
-    border: 3px solid var(--debug-green); /* debug */
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 .firstline_nav_tabs {
@@ -59,12 +60,12 @@ div footer{
     gap: 40px;
     justify-content: flex-end; 
     align-items: center;
-    border: 3px solid var(--debug-green); /* debug */
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 
 }
 .nav_item h1 {
   margin: 0;
-  border: 3px solid var(--debug-green); /* debug */
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 
 }
 
@@ -84,14 +85,14 @@ letter-spacing: 2px;
   background-color: white;
 }
 .big_title{
-      border: 3px solid var(--debug-green); /* debug */
+      border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 .big_title h1{
   font-family: "BebasNeue", sans-serif;
   font-size: 48px;
   color: var(--NYU--ultra-violet);
-  margin: 0;
+  margin: 40px;
   word-spacing: normal;
   letter-spacing: 2px;
 }
@@ -110,7 +111,7 @@ letter-spacing: 2px;
 .page_footer_NYUSH img {
     height: 50px;
     width: auto;
-    border: 3px solid var(--debug-green); /* debug */
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 }
 
 .page_footer_word {
@@ -120,5 +121,95 @@ letter-spacing: 2px;
     letter-spacing: 2px;
     font-weight: bold;
     font-style: italic;
-    border: 3px solid var(--debug-green); /* debug */
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+/* .actual_contents{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.side_panel{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.personal_info {
+  background-color: var(--NYU--violet);
+  color: white;
+  padding: 10px 14px;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.show video{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+} */
+
+
+.actual_contents{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 90%;
+  padding: 0 20px;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.side_panel{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.show{
+  max-width: 100%;
+  padding: 20px 0;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.show video{
+  width: 60%;
+  height: auto;
+}
+
+.personal_info{
+  background-color: white;
+  color: var(--NYU--ultra-violet);
+  padding: 10px 14px;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  font-size: xx-large;
+}
+
+.profile_picture{
+  height: auto;
+  width: 80%;
+}
+
+.show p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: var(--NYU--ultra-violet);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.show h1{
+  font-family: "BebasNeue", sans-serif;
+  font-size: 36px;
+  color: var(--NYU--ultra-violet);
+  margin: 20px 0;
+  word-spacing: normal;
+  letter-spacing: 2px;
 }
