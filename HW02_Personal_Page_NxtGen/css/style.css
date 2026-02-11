@@ -234,3 +234,10 @@ letter-spacing: 2px;
   font-size: 18px;
   text-decoration: none;
 }
+.gitlink{
+  color: var(--NYU-violet);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
