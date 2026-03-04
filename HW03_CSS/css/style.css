@@ -1,0 +1,312 @@
+/* the finals 's font */
+
+:root {
+  --debug: 0;
+  --the-finals-red: #ba3a45;
+  --NYU--violet: #4e1586;
+  --NYU--ultra-violet: #7c22d8;
+  --debug-green: rgb(0, 255, 34);
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url("../images/NYUSH_BackGround.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+div header{
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+div footer{
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+/* firstline nav */
+.firstline_nav {
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: var(--NYU--violet);
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+
+}
+
+.the_finals_logo img{
+    height: 40px;
+    width: auto;
+    margin: 0;
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.firstline_nav_tabs {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end; 
+    align-items: center;
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+
+}
+.nav_item h1 {
+  margin: 0;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: white;
+font-style: italic;
+letter-spacing: 2px;
+}
+.nav_item a:focus {
+  color: var(--NYU--ultra-violet);
+}
+.nav_item a:hover {
+  color: var(--NYU--ultra-violet);
+}
+.nav_item a:active {
+  color: var(--NYU--ultra-violet);
+  font-size: 150%;
+}
+
+
+
+
+
+
+.actual_contents {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.big_title{
+      border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.big_title h1{
+  font-family: "BebasNeue", sans-serif;
+  font-size: 48px;
+  color: var(--NYU--ultra-violet);
+  margin: 40px;
+  word-spacing: normal;
+  letter-spacing: 2px;
+}
+
+/* footer bar */
+.page_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--NYU--violet);   /* 和顶部一致 */
+    padding: 20px 40px;
+    margin-top: 80px;
+}
+
+/* 左侧 NYUSH logo */
+.page_footer_NYUSH img {
+    height: 50px;
+    width: auto;
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.page_footer_word {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: italic;
+    border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.actual_contents{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 90%;
+  padding: 0 20px;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.info_list{
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.side_panel{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.show{
+  max-width: 100%;
+  padding: 20px 0;
+  border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
+}
+
+.show video{
+  width: 60%;
+  height: auto;
+}
+
+.personal_info{
+  list-style: none; 
+  background-color:rgba(255, 255, 255, 0);
+  color: var(--NYU--ultra-violet);
+  padding: 10px 14px;
+  font-family: "BebasNeue";
+  letter-spacing: 2px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.profile_picture{
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.show p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: var(--NYU--ultra-violet);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.show h1{
+  font-family: "BebasNeue", sans-serif;
+  font-size: 36px;
+  color: var(--NYU--ultra-violet);
+  margin: 20px 0;
+  word-spacing: normal;
+  letter-spacing: 2px;
+}
+
+.contact_info_item{
+  list-style: none; 
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: var(--NYU--ultra-violet);
+  line-height: 1.5;
+  
+  display: flex;         
+  align-items: center;   
+  gap: 30px;              
+}
+
+.contact_info_item a img{
+  width: 32px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.project_table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.project_table_header{
+  background-color: var(--NYU--ultra-violet);
+  color: white;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.project_table_row{
+  background-color: whitesmoke;
+  border: 3px solid gray;
+  color: var(--NYU--ultra-violet);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+.gitlink{
+  color: var(--NYU-violet);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact_table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact_table td:first-child{
+  width: 35%;
+}
+
+.contact_table td:last-child{
+  width: 65%;
+}
+
+.contact_table td{
+  font-family: "BebasNeue", sans-serif;
+  color: var(--NYU--ultra-violet);
+  font-size: xx-large;
+}
+
+.contact_table_row h3{
+  color: var(--NYU--ultra-violet);
+  font-size: xx-large;
+  font-family: "BebasNeue", sans-serif;
+}
+
+.topic_select{
+  width: 100%;
+  height: 44px;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+.contact_table textarea{
+  width: 100%;
+  font-size: large;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.interaction_button{
+  background-color: var(--NYU--violet);
+  color: white;
+  font-family: "BebasNeue", sans-serif;
+  font-size: x-large;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.interaction_button:hover {
+  color: var(--NYU--ultra-violet);
+}

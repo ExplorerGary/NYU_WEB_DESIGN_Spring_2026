@@ -1,0 +1,131 @@
+/* https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41 */
+
+@font-face {
+  font-family: valentine;
+  src: url(../fonts/SparklingValentine.ttf);
+}
+@font-face {
+  font-family: monserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    font-family : monserrat;
+
+    background: url(../images/zelda.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    padding : 100px;
+
+}
+
+#wrap{
+    border : solid 0px black;
+    /* Sets a upper limit for size */
+    max-width : 1024px; 
+    /* Center the box in X */
+    margin : 0 auto;
+    /* background color */
+    background-color : rgba(255,255,255,.5);
+    /* smooth corners */
+    border-radius : 25px;
+}
+
+header h1{
+    padding : 20px;
+    font-family : valentine;
+}
+
+nav{
+    border : solid 0px green;
+    margin-bottom : 60px;
+}
+
+nav ul{
+    border : solid 0px black;
+    /* Remove the bullets */
+    list-style : none;
+    /* Remove indentation */
+    padding : 0px;
+    /* Remove space top and bottom */
+    margin : 0px;
+    /* Turn children into a row */
+    /* Activate Flex */
+    display : flex;
+}
+
+nav ul a:link{
+    border : solid 0px red;
+    /* Make each LI the same size  */
+    flex-grow : 1;
+    /* Align Text */
+    text-align: center;
+    /* Add padding top and bottom */
+    padding-top : 15px;
+    padding-bottom : 15px;
+    color : #344E41;
+    text-decoration : none;
+}
+
+nav ul a:visited{
+   color : #588157;
+}
+
+nav ul a:focus{
+    background: #DAD7CD;
+    color : #344E41;
+}
+
+nav ul a:hover{
+    background: #DAD7CD;
+    color : #344E41;
+}
+
+nav ul a:active{
+    background : white;
+}
+
+
+main{
+    min-height : 45vh;
+}
+
+main, footer{
+    display : flex;
+}
+
+main section, footer section{
+    flex-grow : 1;
+    width : 50%;
+    max-width : 50%;
+    min-width : 50%;
+
+    border : solid 0px black;
+}
+
+#mainPicture img{
+    width : 100%;
+    border-radius : 10px;
+}
+
+#mainText h3, #mainText p{
+    padding-left : 20px;
+}
+
+#socialMedia{
+    display : flex;
+
+    justify-content: space-around;
+    align-items : center;
+}
+
+#socialMedia img{
+    width : 30px;
+}
+
+#map iframe{
+    border-radius: 25px;
+}

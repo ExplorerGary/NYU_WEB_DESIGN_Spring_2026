@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice Personal Page of Next Generation">
+    <meta name="keywords" content="HTML, CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="images/the finals icon.jpeg">
+    <title>Introducing Contestant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Internal CSS -->
+    <style> 
+    .gameplay_video{
+        /* width: 100%; */
+        border: 5px solid var(--NYU--ultra-violet);
+        border-radius: 10px;
+    }
+    .gameplay_video:hover{
+        width: 80%;
+        border: 10px solid var(--NYU--ultra-violet);
+        border-radius: 10px;
+    }
+    .gameplay_video:focus{
+        width: 80%;
+        border: 10px solid var(--NYU--ultra-violet);
+        border-radius: 10px;
+    }
+    .show p {
+        font-size: 32px;
+        line-height: 1.6;
+    }
+    </style>
+</head>
+
+<body>
+    <div class = "wrap">
+
+        <div class = "firstline_nav" style="font-family: 'BebasNeue', sans-serif;">
+            <div class = "the_finals_logo">
+                <a href="index.html">
+                    <img src="images/Nyu_long_color.svg" alt="to index">
+                </a>
+            </div>
+            <nav class = "firstline_nav_tabs">
+
+                <div class = "nav_item">
+                    <a href="index.html">
+                        <h1>Home</h1>
+                    </a>
+                </div>
+
+                <div class = "nav_item">
+                    <a href="contact.html">
+                        <h1>Contact</h1>
+                    </a>
+                </div>
+
+                <div class = "nav_item">
+                    <a href="project.html">
+                        <h1>Projects</h1>
+                    </a>
+                </div>
+                <div class = "nav_item">
+                    <a href="https://www.reachthefinals.com/" target="_blank">
+                        <h1>Reach the Finals</h1>
+                    </a>
+                </div>
+            </nav>
+        </div> <!-- end of firstline_nav -->
+        <div>
+            <header class = "big_title">
+                    <h1>Introducing Contestant: Ziqi Gu</h1>
+            </header>
+        </div>
+        <div class = "actual_contents">
+            <!-- side panel -->
+            <div class="side_panel">
+                <img class="profile_picture" src="images/qilin.png" alt="placeholder">
+                <ul>
+                    <li class = personal_info>Junior @ <a href="https://shanghai.nyu.edu/" target="_blank" style="color: var(--NYU--ultra-violet);text-decoration: none;">NYU Shanghai</a></li>
+                    <li class = personal_info>Computer Science Major</li>
+                    <li class = personal_info>Data Science Minor</li>
+                    <li class = personal_info><a href = "project.html" style="color: var(--NYU--ultra-violet);text-decoration: none;">An Early-Stage Researcher</a></li>
+                </ul>
+            </div>
+            <!-- show -->
+            <div class = "show">
+                <h1>BRIEF</h1>
+                <p>
+                    Hi there! I am Ziqi Gu, a junior at NYU Shanghai. I am a computer science major and data science minor. I am also an early-stage researcher in the field of machine learning, and human-computer interaction. I am passionate about exploring the intersection of technology and human behavior, and I am excited to share my work with you!
+                </p>
+                <h1>Come and take a look at my latest work: (not) ARC Raiders</h1>
+                <p>
+                    It's a Flyswatter Arena game where players shot down hostile drones. GLHF!
+                </p>
+                <br>
+                <video controls autoplay loop muted class = "gameplay_video">
+                    <source src="videos/gameplay.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+            </div>
+        </div>
+        <div>
+        <footer class = "page_footer">
+            <a class="page_footer_NYUSH"
+            href="https://shanghai.nyu.edu/"
+            target="_blank">
+                <img src="images/NYUSH.svg" alt="NYU Shanghai Logo">
+            </a>
+            <div class="page_footer_word">
+                Make the World Your Major!
+            </div>
+        </footer>
+        </div>
+    
+    </div> <!-- end of wrap -->
+</body>
+
+</html>
