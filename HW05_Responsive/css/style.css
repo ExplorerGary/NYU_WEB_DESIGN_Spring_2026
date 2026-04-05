@@ -1,0 +1,147 @@
+:root {
+  --debug: 0px;
+  --debug-green: rgb(0, 255, 34);
+  --BanGDreamRed: rgba(255, 77, 109, 1);
+  --BanGDreamBlue: rgba(123, 97, 255, 1);
+  --the-background-color: rgba(224, 79, 115, 0.2);
+  --banner-linear-gradient: linear-gradient(to right, var(--BanGDreamRed), var(--BanGDreamBlue));
+  --scroll-linear-gradient: linear-gradient(to bottom, var(--BanGDreamRed), var(--BanGDreamBlue));
+}
+
+*{
+  border : solid var(--debug) var(--debug-green);
+}
+
+@font-face {
+  font-family: "Jaro";
+  src: url("../fonts/Jaro-Regular-VariableFont_opsz.ttf") format("truetype");
+  font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jaro", "Segoe UI", sans-serif;
+  font-weight: 200;
+  color : white;
+  word-spacing: 2px;
+  letter-spacing: 4px;
+  padding : 0;
+  margin : 0;
+  background-color: var(--the-background-color);
+}
+/* the design: in desktop, the nav, contact will take one col, the timeline will take 5 col; */
+/* in the time line, we have 5 col, the fishbone(root), the history(the node), and the scrollbar */
+/* the fishbone and scrollbar takes 0.5 col each, while two side history take the rest 2 col  */
+.grid-container{
+    min-height : 100vh;
+
+    display : grid;
+    /* header 320 , aside/content 760 footer 560 */
+    grid-template-rows: 320px 760px auto;
+    /* 12col */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    
+}
+.headbanner {
+    grid-column: 1/-1;
+    background: var(--banner-linear-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 24px;
+}
+
+.headbanner h1 {
+    margin: 0;
+}
+
+.banner-main-title {
+    font-size: 96px;
+}
+.banner-sub-title {
+    font-size: 48px;
+}
+.call-to-action-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* aside */
+.aside{
+    grid-column: 1/4;
+}
+
+/* main */
+.main-content{
+    grid-column: 4/13;
+}
+
+/* footer */
+#footer {
+    grid-column: 1/-1;
+    margin : 0;
+    padding : 0;
+}
+.footer-title {
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height:144px;
+    background: var(--banner-linear-gradient);
+}
+
+.footer-title h1 {
+    margin: 0;
+}
+.external-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 0 24px;
+    flex-wrap: wrap;
+}
+
+.external-link-img-a{
+    width: min(45vw, 594px);
+    max-width: 100%;
+    height: auto;
+}
+
+.external-link-img-b{
+    width: min(45vw, 594px);
+    max-width: 100%;
+    height: auto;
+}
+.footer-ending {
+    background: var(--banner-linear-gradient);
+    min-height: 24px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    #the_doge {
+        display: none;
+    }
+    .headbanner-main-title {
+        font-size: 32px;
+    }
+    .headbanner-sub-title {
+        display:none;
+    }
+}
+@media (min-width: 481px) {
+    .mobile-footer {
+        display: none;
+    }
+}
