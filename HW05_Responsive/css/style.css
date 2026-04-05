@@ -139,10 +139,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 24px;
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    gap: 200px;
+    padding: 8px clamp(28px, 6vw, 88px);
     flex-wrap: nowrap;
 }
-
+/* .external-link a {
+  flex: 0 0 auto;
+} */
 .external-link-img-a{
     width: min(45vw, 594px);
     max-width: 100%;
