@@ -4,6 +4,7 @@
   --BanGDreamRed: rgba(255, 77, 109, 1);
   --BanGDreamBlue: rgba(123, 97, 255, 1);
   --the-background-color: rgba(224, 79, 115, 0.2);
+  --tabs-background-color: rgba(224, 79, 115, 0.2);
   --banner-linear-gradient: linear-gradient(to right, var(--BanGDreamRed), var(--BanGDreamBlue));
   --scroll-linear-gradient: linear-gradient(to bottom, var(--BanGDreamRed), var(--BanGDreamBlue));
 }
@@ -101,6 +102,47 @@ body {
 /* aside */
 .aside{
     grid-column: 1/4;
+}
+
+.contact-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--tabs-background-color);
+    border-radius: 12px;
+}
+
+.contact-tab-banner{
+  background: var(--banner-linear-gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+.contact-tab-list {
+  width: 100%;
+}
+
+.contact-tab-list ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+}
+
+.contact-tab-banner h2 {
+  margin: 0;
+  font-size: 24px;
 }
 
 /* main */
