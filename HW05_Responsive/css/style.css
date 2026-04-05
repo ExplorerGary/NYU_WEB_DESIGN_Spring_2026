@@ -3,7 +3,7 @@
   --debug-green: rgb(0, 255, 34);
   --BanGDreamRed: rgba(255, 77, 109, 1);
   --BanGDreamBlue: rgba(123, 97, 255, 1);
-  --the-background-color: rgba(224, 79, 115, 0.2);
+  --the-background-color: rgba(224, 79, 115, 0.3);
   --tabs-background-color: rgba(224, 79, 115, 0.2);
   --banner-linear-gradient: linear-gradient(to right, var(--BanGDreamRed), var(--BanGDreamBlue));
   --scroll-linear-gradient: linear-gradient(to bottom, var(--BanGDreamRed), var(--BanGDreamBlue));
@@ -47,7 +47,7 @@ body {
 
     display : grid;
     /* header 320 , aside/content 760 footer 560 */
-    grid-template-rows: auto 760px auto;
+    grid-template-rows: auto auto auto;
     /* 12col */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     
@@ -104,14 +104,52 @@ body {
     grid-column: 1/4;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    padding: 24px;
+    margin: 16px;
+    background-color: var(--tabs-background-color);
+    border-radius: 12px;  
+    list-style-type: disc;
+}
+
+.nav-item{
+  background: var(--banner-linear-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-item a {
+  color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 8px 12px;
+}
+
+.BanGDreamLogo {
+    width: 80%;
+    height: auto;
+}
 .contact-tabs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     gap: 12px;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 16px;
     background-color: var(--tabs-background-color);
     border-radius: 12px;
 }
@@ -134,15 +172,32 @@ body {
         margin: 0;
         padding: 0;
         width: 100%;
-          display: flex;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        list-style: none;
         text-decoration: none;
+        gap: 8px;
 }
 
 .contact-tab-banner h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+.contact-tab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        padding: 8px 12px;
+        gap:36px;
+}
+
+.contact_info_icon {
+        width: 36px;
+        height: 36px;
 }
 
 /* main */
@@ -226,6 +281,9 @@ body {
     }
     .banner-sub-title {
         display:none;
+    }
+    .contact-tabs {
+        display: none;
     }
 }
 /* desktop */
