@@ -115,13 +115,26 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 12px;
     padding: 24px;
     margin: 16px;
     background-color: var(--tabs-background-color);
     border-radius: 12px;  
-    list-style-type: disc;
+    list-style: none;
+}
+
+.nav-list li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li:first-child a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-item{
@@ -130,16 +143,19 @@ nav {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  min-width: 400px;
 }
 .nav-item a {
-  color: white;
+        color: white;
     text-decoration: none;
-    font-size: 28px;
+        font-size: 36px;
     padding: 8px 12px;
 }
 
 .BanGDreamLogo {
     width: 80%;
+    display: block;
+    margin: 0 auto;
     height: auto;
 }
 .contact-tabs {
@@ -178,6 +194,10 @@ nav {
         list-style: none;
         text-decoration: none;
         gap: 8px;
+}
+
+.contact-tab-list li {
+    list-style: none;
 }
 
 .contact-tab-banner h2 {
