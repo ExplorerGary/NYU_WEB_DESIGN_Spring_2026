@@ -42,6 +42,7 @@ body {
   width: 6px;
   background: #fff;
   transform: translateX(-50%);
+  border-radius: 3px;
 }
 
 .timeline-item {
