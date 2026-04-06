@@ -262,16 +262,17 @@ nav {
     overflow-y: hidden;
     overflow-x: hidden;
 
-    padding: 16px;
+        padding: 0;
     border-radius: 12px;
 }
 
   .main-content-index iframe{
-    overflow-x: hidden;
+        display: block;
     margin: 0;
-    padding: -12px;
+        padding: 0;
     height: 100%;
     width: 100%;
+        min-height: 100%;
     border: none;
     border-radius: 12px;
   }
@@ -309,10 +310,10 @@ nav {
 }
 /* main-content index: the timeline */
 .timeline-header{
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin: -16px -16px 16px;
-    padding: 12px 16px;
+    padding: 24px 16px;
     background: var(--banner-linear-gradient);
     border-radius: 12px 12px 0 0;
 }

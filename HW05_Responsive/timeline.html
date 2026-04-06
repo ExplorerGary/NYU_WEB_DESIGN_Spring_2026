@@ -6,13 +6,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
 
 
         /* 整个容器 */
         .timeline {
             position: relative;
-            width: 800px;
-            margin: 100px auto;
+            width: min(960px, calc(100% - 32px));
+            margin: 64px auto;
+            box-sizing: border-box;
         }
 
         /* 中间那条“鱼骨” */
