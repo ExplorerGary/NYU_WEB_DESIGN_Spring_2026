@@ -39,6 +39,7 @@ body {
 .timeline-item::before {
   content: "★";
   grid-column: 2;
+  grid-row: 1;
   justify-self: center;
   font-size: 42px;
   line-height: 1;
@@ -73,21 +74,25 @@ body {
 
 .timeline-item.left img {
   grid-column: 1;
+  grid-row: 1;
   justify-self: end;
 }
 
 .timeline-item.left .timeline-content {
   grid-column: 3;
+  grid-row: 1;
   text-align: left;
 }
 
 .timeline-item.right img {
   grid-column: 3;
+  grid-row: 1;
   justify-self: start;
 }
 
 .timeline-item.right .timeline-content {
   grid-column: 1;
+  grid-row: 1;
   text-align: right;
 }
 
@@ -109,9 +114,10 @@ body {
 
   .timeline-item::before {
     grid-column: 2;
+    grid-row: auto;
     align-self: center;
     font-size: 34px;
-    transform: translate(5px, 0px);
+    transform: translate(5px, 110px);
   }
 
   .timeline-item.left img,
@@ -119,6 +125,7 @@ body {
   .timeline-item.left .timeline-content,
   .timeline-item.right .timeline-content {
     grid-column: 1;
+    grid-row: auto;
     justify-self: stretch;
     text-align: left;
   }
