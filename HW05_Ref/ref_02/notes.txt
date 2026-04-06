@@ -1,0 +1,27 @@
+CSS Positions
+
+- There three Positions
+
+position : relative;
+position : absolute;
+position : fixed;
+
+
+Relative
+
+- when activated you unlock top and left 
+
+#heroBtn{
+    position : relative;
+    top : 100px;
+    left : 100px;
+}
+
+Absolute
+- you unlock, top, left, bottom, right, z-index
+- detaches from the DOM leaving its original static position empty 
+- uses Browser window as a reference
+
+Fixed 
+- Same as position absolute but it stays 'fixed' when you scroll
+

@@ -1,0 +1,135 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Monda:wght@400..700&display=swap');
+
+*{
+    border : solid 1px black;
+}
+
+.grid-container{
+    min-height : 100vh;
+
+    display : grid;
+
+    grid-template-rows: 560px 780px 420px 900px 100px 525px;
+    /* 6 cols */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
+
+}
+
+header,
+.sub-grid-container,
+.racePattern,
+footer
+{
+    grid-column: 1/-1;
+}
+
+.sub-grid-container{
+    display : grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+p{
+  font-family: "Monda", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding : 10px;
+}
+
+h1{
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding : 10px;
+}
+
+header{
+    background : url(../images/Hero.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;;
+}
+
+nav{
+    border : solid 1px red;
+    display : flex;
+    justify-content: flex-end;
+
+    
+}
+
+nav ul{
+    list-style: none;
+    padding : 0px;
+    margin : 0px;
+
+    display : flex;
+
+    background-color : rgba(255,255,255,.5);
+}
+
+nav ul a{
+    width : 130px;
+    text-align : center;
+    padding : 10px;
+
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size : 12pt;
+    color : black;
+}
+
+
+#heroBtn{
+    width : 355px;
+    height : 85px;
+
+    display : flex;
+    justify-content: center;
+    align-items : center;
+
+    border-radius : 20px;
+
+    background-color : #78B730;
+
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size : 30pt;
+    color : white;
+}
+
+#heroBtn:hover{
+    cursor : pointer;
+    background-color : white;
+    color : #78B730;
+}
+
+#truck{
+    width : 100%;
+}
+
+
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 480px){
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 560px minmax(30vh, auto) minmax(30vh, auto) 800px minmax(30vh, auto) minmax(30vh, auto) 100px minmax(800px, auto);
+    }
+
+    .sub-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
