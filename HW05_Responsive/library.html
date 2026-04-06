@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Library of BanG Dream!</title>
+    <!-- prepare jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -22,28 +24,95 @@
         <div class = "aside">
             <!-- the nav -->
             <nav>
-                <ul>
+                <ul class = "nav-list">
+                    <li>
+                        <a href="index.html">
+                            <img class = "BanGDreamLogo" src="img/BanGDream11thLogo.png" alt="Logo">
+                        </a>
+                        <h1 class = "nav-sub-title">A Decade of Music, Bonds, and Dreams</h1>
+                    </li>
                     <!-- <li id = "the_doge" >
                         <a href="#">
                             <img style="height: auto; width: auto;" src="img/doge.png" alt="Logo" class="logo">
                         </a>
                     </li> -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="band.html">Band</a></li>
-                    <li><a href="library.html">Library</a></li>
+                    <li class = "desktop_nav_row">
+                        <div class = "nav-item">
+                            <a href="index.html">Home</a>
+                        </div>
+                    </li> 
+                    <li class = "desktop_nav_row">
+                        <div class = "nav-item">
+                            <a href="band.html">Band</a>
+                        </div>
+                    </li>
+                    <li class = "desktop_nav_row">
+                        <div class = "nav-item">
+                            <a href="library.html">Library</a>
+                        </div>
+                    </li>
+                    <li class = "nav-item" id = "mobile_nav_row">
+                        <div class = "nav-item">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class = "nav-item">
+                            <a href="band.html">Band</a>
+                        </div>
+                        <div class = "nav-item">
+                            <a href="library.html">Library</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <!-- the contact tabs -->
-            <div>
-                <h1>Contact</h1>
+            <div class = "contact-tabs">
+                <div class = "contact-tab-banner">
+                    <h2>A memorial page by Ziqi Gu</h2>
+                    <h2>In the Name of BanG Dream!</h2>
+                </div>
+                <div class = "contact-tab-list">
+                    <ul>
+                        <li class = "contact-tab">
+                            Gmail <a href = "mailto:zg2598@nyu.edu">
+                                <img src="img/gmail.svg" alt="gmail logo" class="contact_info_icon">
+                            </a>
+                        </li>
+                        <li class = "contact-tab">
+                            Instagram <a href="https://www.instagram.com/ziqi050221/" target="_blank">
+                                <img src="img/instagram.svg" alt="instagram logo" class="contact_info_icon">
+                            </a>
+                        </li>
+                        <li class = "contact-tab">
+                            GitHub <a href="https://github.com/ExplorerGary" target="_blank">
+                                <img src="img/github.svg" alt="github logo" class="contact_info_icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
             </div>
         </div>
         
         <!-- the main content -->
-        <div class = "main-content">
-            <div>
-                <h1>Timeline</h1>
-            </div>
+        <!-- it's a scroll box!!! -->
+        <div class="main-content"> 
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it....</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+         <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it....</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+         <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it....</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>\
+
+             <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it....</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+             <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it....</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>"In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."</p>
+            <p>很多内容...</p>
+            <p>很多内容...</p>
         </div>
 
         <!-- the_footer_section -->
@@ -52,20 +121,33 @@
                 <h1>Explore the World of BanG Dream!</h1>
             </div>
             <div class = "external-link">
-                <a href="https://bang-dream-gbp-en.bushiroad.com/">
+                <a href="https://bang-dream-gbp-en.bushiroad.com/" target="_blank">
                     <img class = "external-link-img-a" src="img/ExtLink_ Gorupa.png" alt="Gorupa Icon">
                 </a>
-                <a href="https://bdon.biligames.com/">
+                <a href="https://bdon.biligames.com/" target="_blank">
                     <img class = "external-link-img-b" src="img/ExtLink_ OurNotes.png" alt="OurNotes Icon">
                 </a>
             </div>
             <div class = "footer-ending">
                 <div class = "mobile-footer">
-                    <h1>This is contact </h1>
+                    <h2>A memorial page by Ziqi Gu</h2>
+                    <h2>In the Name of BanG Dream!</h2>
+                    <div class = "mobile-contact-info">
+                        <a href = "mailto:zg2598@nyu.edu">
+                            <img src="img/gmail.svg" alt="gmail logo" class="contact_info_icon">
+                        </a>
+                        <a href="https://www.instagram.com/ziqi050221/" target="_blank">
+                            <img src="img/instagram.svg" alt="instagram logo" class="contact_info_icon">
+                        </a>
+                        <a href="https://www.github.com/ExplorerGary" target="_blank">
+                            <img src="img/github.svg" alt="github logo" class="contact_info_icon">
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
-
+        <!-- loading jQuery -->
+        <script src="js/library.js"></script>
 </body>
 </html>
