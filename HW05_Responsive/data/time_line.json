@@ -21,7 +21,7 @@
   {
     "date": "May 2025",
     "description": "Poppin'Party 10th Anniversary LIVE 'Hoshi no Kodou' at Nippon Budokan",
-    "image": "img/event7.png",
+    "image": "img/event4.png",
     "side": "right"
   },
   {
@@ -33,49 +33,49 @@
   {
     "date": "Apr 2023",
     "description": "Ave Mujica joins BanG Dream!",
-    "image": "img/event4.png",
+    "image": "img/event7.png",
     "side": "right"
   },
   {
     "date": "Apr 2022",
     "description": "MyGO!!!!! joins BanG Dream!",
-    "image": "img/event6.png",
+    "image": "img/event8.png",
     "side": "left"
   },
   {
     "date": "Jun 2020",
     "description": "RAISE A SUILEN joins BanG Dream!",
-    "image": "img/event_7.png",
+    "image": "img/event9.png",
     "side": "right"
   },
   {
     "date": "Mar 2020",
     "description": "Morfonica joins BanG Dream!",
-    "image": "img/event_8.png",
+    "image": "img/event10.png",
     "side": "left"
   },
   {
     "date": "Mar 2017",
     "description": "The Game BanG Dream! Girls Band Party! Launched!",
-    "image": "img/event_9.png",
+    "image": "img/event11.png",
     "side": "right"
   },
   {
     "date": "Jan 2017",
     "description": "BanG Dream! 1st Season begins airing",
-    "image": "img/event_10.png",
+    "image": "img/event12.png",
     "side": "left"
   },
   {
     "date": "Apr 2015",
     "description": "1st Live 'I started a band in spring!' held at Shimokitazawa",
-    "image": "img/event_11.png",
+    "image": "img/event13.png",
     "side": "right"
   },
   {
     "date": "Jan 2015",
     "description": "Project BanG Dream! officially announced!",
-    "image": "img/event_12.png",
+    "image": "img/event14.png",
     "side": "left"
   }
 ]
