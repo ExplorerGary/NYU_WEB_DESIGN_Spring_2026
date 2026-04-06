@@ -28,13 +28,18 @@ $(document).ready(function() {
         // TODO:
         // - clear container
         // - maybe create wrapper / layout structure
-
+        var base_html = `
+            <div class="timeline-header">
+                <h1>Explore the Timeline</h1>
+            </div>
+        `;
+        $('.main-content').append(base_html);
 
         // 3.2 loop items
         data.forEach(function(item) {
 
             // 3.3 gen_item
-            var element = genItem(item);
+            var element = genItem(item, item.side);
 
             // 3.4 append to container
             // TODO:
@@ -48,20 +53,34 @@ $(document).ready(function() {
     // =========================
     // 4. gen_item
     // =========================
-    function genItem(item) {
+    function genItem(item, item_type) {
 
         // TODO:
         // - create html structure
         // - fill with item data
+        var html = ``;
 
-        var html = `
-            <div class="timeline-item ${item.type}">
-                <div class="content">
+        if (item_type === "left") {
+        html = `
+            <div class="timeline-item-${item.type}">
+                <div class="timeline-content-left">
+                    <h3>${item.date}</h3>
+                    <p>${item.description}</p>
+                </div>
+                <img src="${item.img}" alt="${item.title}">
+            </div>
+        `;
+        } else {
+            html = `
+            <div class="timeline-item-${item.type}">
+                <img src="${item.img}" alt="${item.title}">
+                <div class="timeline-content-right">
                     <h3>${item.date}</h3>
                     <p>${item.description}</p>
                 </div>
             </div>
-        `;
+            `;
+        }
 
         // return generated element
         return html;
