@@ -1,0 +1,10 @@
+ppp=https://bandori.fandom.com/wiki/Poppin%27Party?file=Popipa_2023.png
+ag=https://bandori.fandom.com/wiki/Afterglow?file=Afglo_2023.png
+pp=https://bandori.fandom.com/wiki/Pastel*Palettes?file=Pasupare_2023.png
+r=https://bandori.fandom.com/wiki/Roselia?file=Roselia_2023.png
+hhw=https://bandori.fandom.com/wiki/Hello,_Happy_World!?file=Hhw_2023.png
+ras=https://bandori.fandom.com/wiki/RAISE_A_SUILEN?file=Ras_2023.png
+morfonica=https://bandori.fandom.com/wiki/Morfonica?file=Morfonica_2023.png
+mygo=https://bandori.fandom.com/wiki/MyGO!!!!!?file=Garupa-MYGO.png
+mujica=https://bandori.fandom.com/wiki/Ave_Mujica?file=Ave_Mujica.jpg
+mewtype=https://bandori.fandom.com/wiki/Mugendai_Mewtype?file=Mugendai_Mewtype.jpg

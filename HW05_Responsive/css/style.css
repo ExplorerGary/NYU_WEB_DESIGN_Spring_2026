@@ -360,7 +360,7 @@ nav {
 .lib-content{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
   gap: 36px;
 }
@@ -370,11 +370,22 @@ nav {
 }
 
 .lib-content a h1{
-  font-size: 24px;
+  font-size: 32px;
   color: white;
   text-decoration: none;
 }
 
+.lib-content img{
+  width: min(144px, 100%);
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lib-content img.lib-play_button{
+  width: auto;
+  height: 48px;
+}
 /* footer */
 #footer {
     grid-column: 1/-1;
@@ -552,7 +563,21 @@ nav {
         align-items: center;
         gap: 24px;
     }
-}
+
+    .lib-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:0;
+    }
+    .lib-content a h1{
+      font-size: 18px;
+    }
+    .lib-content img{
+      width: min(256px, 100%);
+    }
+  }
 /* desktop */
 @media (min-width: 481px) {
     .mobile-footer {

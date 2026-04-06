@@ -35,7 +35,7 @@ $(document).ready(function() {
             <div class="timeline-header">
                 <h1>Explore the Big Hits</h1>
             </div>
-            <h1 class = "our-story">Our Memories Endures...</h1>
+            <h1 class = "our-story">Our Memory Endures...</h1>
         `;
         container.append(base_html);
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
                     <h1>${item.band}</h1>
                 </a>
                 <a href = ${item.link} target = "_blank">
-                    <img src = "../img/youtube.svg" alt = "link">
+                    <img class = "lib-play_button" src = "../img/youtube.svg" alt = "link">
                 </a>
             </div>
         `;
@@ -90,7 +90,7 @@ $(document).ready(function() {
                     <h1>${item.band}</h1>
                 </a>
                 <a href = ${item.link} target = "_blank">
-                    <img src = "../img/spotify.svg" alt = "link">
+                    <img class = "lib-play_button" src = "../img/spotify.svg" alt = "link">
                 </a>
             </div>
             `;

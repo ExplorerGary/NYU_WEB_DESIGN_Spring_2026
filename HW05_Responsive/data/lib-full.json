@@ -2,7 +2,7 @@
     {
         "title": "BanG Dream! 10th Anniversary Live",
         "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "cover": "img/live_10th.png",
+        "cover": "img/10th.webp",
         "type": "live",
         "band": "all",
         "bandwikilink": "https://bandori.fandom.com/wiki/BanG_Dream!",
@@ -11,7 +11,7 @@
     {
         "title": "Poppin'Party! 10th Anniversary Live",
         "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "cover": "img/live_ppp10th.png",
+        "cover": "img/10thppp.jpg",
         "type": "live",
         "band": "Poppin'Party",
         "bandwikilink": "https://bandori.fandom.com/wiki/Poppin%27Party",
@@ -20,7 +20,7 @@
     {
         "title": "Kizuna Music♪",
         "link": "https://open.spotify.com/search/Kizuna%20Music%20Poppin%27Party",
-        "cover": "img/kizuna_music.png",
+        "cover": "img/kizuna_music.webp",
         "type": "single",
         "band": "Poppin'Party",
         "bandwikilink": "https://bandori.fandom.com/wiki/Poppin%27Party",
@@ -29,7 +29,7 @@
     {
         "title": "Mayoi Uta",
         "link": "https://open.spotify.com/search/Mayoi%20no%20Uta%20MyGO",
-        "cover": "img/mayoiuta.png",
+        "cover": "img/mayoiuta.webp",
         "type": "single",
         "band": "MyGO!!!!!",
         "bandwikilink": "https://bandori.fandom.com/wiki/MyGO!!!!!",
@@ -38,7 +38,7 @@
     {
         "title": "KILLKISS",
         "link": "https://open.spotify.com/search/KILLKISS%20Ave%20Mujica",
-        "cover": "img/killkiss.png",
+        "cover": "img/killkiss.webp",
         "type": "single",
         "band": "Ave Mujica",
         "bandwikilink": "https://bandori.fandom.com/wiki/Ave_Mujica",
@@ -47,7 +47,7 @@
     {
         "title": "FIRE BIRD",
         "link": "https://open.spotify.com/search/FIRE%20BIRD%20Roselia",
-        "cover": "img/firebird.png",
+        "cover": "img/firebird.webp",
         "type": "single",
         "band": "Roselia",
         "bandwikilink": "https://bandori.fandom.com/wiki/Roselia",
@@ -56,7 +56,7 @@
     {
         "title": "Tenka Toitsu A to Z☆",
         "link": "https://open.spotify.com/search/A%20to%20Z%20Pastel%20Palettes",
-        "cover": "img/atoz.png",
+        "cover": "img/atoz.webp",
         "type": "single",
         "band": "Pastel*Palettes",
         "bandwikilink": "https://bandori.fandom.com/wiki/Pastel*Palettes",
@@ -65,7 +65,7 @@
     {
         "title": "Shuwarin☆Drea~min",
         "link": "https://open.spotify.com/search/Shuwarin%20Drea~min%20Pastel%20Palettes",
-        "cover": "img/shuwarin.png",
+        "cover": "img/shuwarin.webp",
         "type": "single",
         "band": "Pastel*Palettes",
         "bandwikilink": "https://bandori.fandom.com/wiki/Pastel*Palettes",
@@ -74,7 +74,7 @@
     {
         "title": "Neo-Aspect",
         "link": "https://open.spotify.com/search/Neo-Aspect%20Roselia",
-        "cover": "img/neo_aspect.png",
+        "cover": "img/neo_aspect.webp",
         "type": "single",
         "band": "Roselia",
         "bandwikilink": "https://bandori.fandom.com/wiki/Roselia",
@@ -83,7 +83,7 @@
     {
         "title": "Hoshi no Yakusoku",
         "link": "https://open.spotify.com/search/Hoshi%20no%20Yakusoku%20Poppin%27Party",
-        "cover": "img/hoshi_no_yakusoku.png",
+        "cover": "img/hoshi_no_yakusoku.webp",
         "type": "single",
         "band": "Poppin'Party",
         "bandwikilink": "https://bandori.fandom.com/wiki/Poppin%27Party",
