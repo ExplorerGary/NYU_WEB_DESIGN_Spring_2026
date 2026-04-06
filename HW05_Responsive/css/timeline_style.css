@@ -7,24 +7,6 @@ body {
   overflow-y: auto;
 }
 
-.timeline-header {
-  font-size: 24px;
-  text-align: center;
-  margin: 0;
-  padding: 24px 16px;
-  background: var(--banner-linear-gradient);
-  border-radius: 0;
-}
-
-.timeline-header h1 {
-  margin: 0;
-}
-
-.our-story {
-  margin: 20px 0 8px;
-  text-align: center;
-}
-
 .timeline {
   position: relative;
   width: min(1120px, calc(100% - 32px));
