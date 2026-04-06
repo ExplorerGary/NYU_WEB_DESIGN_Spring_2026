@@ -45,7 +45,7 @@ body {
   line-height: 1;
   color: var(--BanGDreamRed);
   z-index: 2;
-  transform: translate(2px, 0px);
+  transform: translate(2px, -4px);
 }
 
 .timeline-item img {
@@ -86,6 +86,8 @@ body {
   grid-column: 3;
   grid-row: 1;
   text-align: left;
+  transform: rotate(5deg);
+  transform-origin: center;
 }
 
 .timeline-item.right img {
@@ -99,6 +101,8 @@ body {
   grid-column: 1;
   grid-row: 1;
   text-align: right;
+  transform: rotate(-5deg);
+  transform-origin: center;
 }
 
 @media (max-width: 480px) {
@@ -133,6 +137,7 @@ body {
     grid-row: auto;
     justify-self: stretch;
     text-align: left;
+    transform: none;
     
   }
 
@@ -156,4 +161,10 @@ body {
   .timeline-content p {
     font-size: 20px;
   }
+  .timeline-item.left img {
+    rotate: 0deg;
+    }
+  .timeline-item.right img {
+    rotate: 0deg;
+    }
 }
