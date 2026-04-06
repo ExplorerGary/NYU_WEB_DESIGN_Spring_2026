@@ -28,12 +28,15 @@ $(document).ready(function() {
         // TODO:
         // - clear container
         // - maybe create wrapper / layout structure
+        var container = $('.main-content-index');
+        container.empty();
+
         var base_html = `
             <div class="timeline-header">
                 <h1>Explore the Timeline</h1>
             </div>
         `;
-        $('.main-content').append(base_html);
+        container.append(base_html);
 
         // 3.2 loop items
         data.forEach(function(item) {
@@ -44,7 +47,7 @@ $(document).ready(function() {
             // 3.4 append to container
             // TODO:
             // append element to .main-content
-            $('.main-content').append(element);
+            container.append(element);
 
         });
     }
@@ -62,19 +65,19 @@ $(document).ready(function() {
 
         if (item_type === "left") {
         html = `
-            <div class="timeline-item-${item.type}">
-                <div class="timeline-content-left">
+            <div class="timeline-item ${item_type}">
+                <img src="${item.image}" alt="${item.date}">
+                <div class="timeline-content">
                     <h3>${item.date}</h3>
                     <p>${item.description}</p>
                 </div>
-                <img src="${item.img}" alt="${item.title}">
             </div>
         `;
         } else {
             html = `
-            <div class="timeline-item-${item.type}">
-                <img src="${item.img}" alt="${item.title}">
-                <div class="timeline-content-right">
+            <div class="timeline-item ${item_type}">
+                <img src="${item.image}" alt="${item.date}">
+                <div class="timeline-content">
                     <h3>${item.date}</h3>
                     <p>${item.description}</p>
                 </div>
