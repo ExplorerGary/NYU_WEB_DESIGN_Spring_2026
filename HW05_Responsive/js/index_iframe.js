@@ -47,14 +47,8 @@ $(document).ready(function() {
     }
 
 
-    // =========================
-    // 4. gen_item
-    // =========================
     function genItem(item, item_type) {
 
-        // TODO:
-        // - create html structure
-        // - fill with item data
         var html = ``;
 
         if (item_type === "left") {
@@ -84,51 +78,3 @@ $(document).ready(function() {
     }
 
 });
-
-// $(document).ready(function() {
-//     $("#btn").click(function() {
-//         alert("Hello jQuery!");
-//     });
-// });
-// // this script will follow:
-// // 1. load data
-// // 2. gen_content:
-// //      base-gen
-// //      gen_item(for item in data)
-// //      append the generated item to the container
-// // 3. gen_item
-
-
-
-// // load data:
-// var data = [];
-// function loadJSON(src, callback) {
-//     $.getJSON(src, function(res) {
-//         data = res;
-//         callback(); // 加载完再执行
-//     });
-// }
-// // gen content:
-// function genContent() {
-//     // base gen:
-//     // todo
-//     // gen items:
-//     data.forEach(item => {
-//         genItem(item);
-//     });
-// }
-
-// // pick the element:
-// function genItem(item) {
-//     const html = `
-//         <div class="node">
-//             <img src="${item.img}" alt="">
-//             <h3>${item.title}</h3>
-//             <p>${item.desc}</p>
-//         </div>
-//     `;
-    
-//     $('.main-content').append(html);
-// }
-
-// $(".main-content")

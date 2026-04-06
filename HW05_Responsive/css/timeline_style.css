@@ -49,9 +49,12 @@ body {
 }
 
 .timeline-item img {
-  width: min(320px, 100%);
+  width: clamp(260px, 30vw, 360px);
   max-width: 100%;
+  aspect-ratio: 16 / 9;
   height: auto;
+  object-fit: cover;
+  object-position: center;
   border-radius: 14px;
   display: block;
 }
@@ -76,6 +79,7 @@ body {
   grid-column: 1;
   grid-row: 1;
   justify-self: end;
+  rotate: -5deg;
 }
 
 .timeline-item.left .timeline-content {
@@ -88,6 +92,7 @@ body {
   grid-column: 3;
   grid-row: 1;
   justify-self: start;
+  rotate: 5deg;
 }
 
 .timeline-item.right .timeline-content {
@@ -128,11 +133,16 @@ body {
     grid-row: auto;
     justify-self: stretch;
     text-align: left;
+    
   }
 
   .timeline-item img {
     width: min(520px, 100%);
+    aspect-ratio: 16 / 9;
+    height: auto;
     margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .timeline-content {
