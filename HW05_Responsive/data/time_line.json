@@ -15,67 +15,67 @@
   {
     "date": "Jan 2026",
     "description": "Anime BanG Dream Ave Mujica begins airing",
-    "image": "img/event3.png",
+    "image": "img/event/event3.webp",
     "side": "left"
   },
   {
     "date": "May 2025",
     "description": "Poppin'Party 10th Anniversary LIVE 'Hoshi no Kodou' at Nippon Budokan",
-    "image": "img/event4.png",
+    "image": "img/event/event4.jpg",
     "side": "right"
   },
   {
     "date": "Jun 2023",
     "description": "Anime BanG Dream! It's MyGO!!!!! begins airing",
-    "image": "img/event5.png",
+    "image": "img/event/event5.jpg",
     "side": "left"
   },
   {
     "date": "Apr 2023",
     "description": "Ave Mujica joins BanG Dream!",
-    "image": "img/event7.png",
+    "image": "img/event/event6.webp",
     "side": "right"
   },
   {
     "date": "Apr 2022",
     "description": "MyGO!!!!! joins BanG Dream!",
-    "image": "img/event8.png",
+    "image": "img/event/event7.jpg",
     "side": "left"
   },
   {
     "date": "Jun 2020",
     "description": "RAISE A SUILEN joins BanG Dream!",
-    "image": "img/event9.png",
+    "image": "img/event/event8.png",
     "side": "right"
   },
   {
     "date": "Mar 2020",
     "description": "Morfonica joins BanG Dream!",
-    "image": "img/event10.png",
+    "image": "img/event/event9.png",
     "side": "left"
   },
   {
     "date": "Mar 2017",
     "description": "The Game BanG Dream! Girls Band Party! Launched!",
-    "image": "img/event11.png",
+    "image": "img/event/event10.jpg",
     "side": "right"
   },
   {
     "date": "Jan 2017",
     "description": "BanG Dream! 1st Season begins airing",
-    "image": "img/event12.png",
+    "image": "img/event/event11.jpg",
     "side": "left"
   },
   {
     "date": "Apr 2015",
     "description": "1st Live 'I started a band in spring!' held at Shimokitazawa",
-    "image": "img/event13.png",
+    "image": "img/event/event12.jpg",
     "side": "right"
   },
   {
     "date": "Jan 2015",
     "description": "Project BanG Dream! officially announced!",
-    "image": "img/event14.png",
+    "image": "img/event/event13.png",
     "side": "left"
   }
 ]
