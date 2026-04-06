@@ -155,6 +155,34 @@ nav {
     padding: 8px 12px;
 }
 
+.desktop_nav_row {
+    display: none;
+}
+
+#mobile_nav_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+#mobile_nav_row .nav-item {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+#mobile_nav_row .nav-item a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .BanGDreamLogo {
     width: 80%;
     display: block;
@@ -306,7 +334,9 @@ nav {
 }
 
 .nav-sub-title{
+  font-size: 18px;
   color: var(--BanGDreamRed);
+  margin: 20px;
 }
 /* mobile */
 @media (max-width: 480px) {
@@ -330,10 +360,28 @@ nav {
     .banner-sub-title {
         display:none;
     }
+    /* nav */
     .BanGDreamLogo{
-      width:50%;
-
+      width:100%;
+      margin: auto ;
     }
+    .nav-list{
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+            padding: 12px;
+            width: 80%;
+    }
+    #mobile_nav_row {
+        gap: 8px;
+    }
+    #mobile_nav_row .nav-item a {
+        font-size: 20px;
+        padding: 8px 6px;
+    }
+        .nav-list li.desktop_nav_row {
+            display: none;
+        }
     .contact-tabs {
         display: none;
     }
@@ -397,5 +445,7 @@ nav {
     .nav-sub-title{
       display: none;
     }
-
+    #mobile_nav_row {
+        display: none;
+    }
 }
