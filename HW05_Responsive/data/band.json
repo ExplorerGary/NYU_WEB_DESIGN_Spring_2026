@@ -1,52 +1,52 @@
 [
     {
         "band": "Poppin'Party",
-        "image": "img/poppin_party.png",
+        "image": "img/ppp.webp",
         "link": "https://bandori.fandom.com/wiki/Poppin%27Party"
     },
     {
         "band": "Afterglow",
-        "image": "img/afterglow.png",
+        "image": "img/ag.webp",
         "link": "https://bandori.fandom.com/wiki/Afterglow"
     },
     {
         "band": "Pastel*Palettes",
-        "image": "img/pastel_palettes.png",
+        "image": "img/pp.webp",
         "link": "https://bandori.fandom.com/wiki/Pastel%2APalettes"
     },
     {
         "band": "Roselia",
-        "image": "img/roselia.png",
+        "image": "img/r.webp",
         "link": "https://bandori.fandom.com/wiki/Roselia"
     },
     {
         "band": "Hello, Happy World!",
-        "image": "img/hello_happy_world.png",
+        "image": "img/hhw.webp",
         "link": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
     },
     {
         "band": "RAISE A SUILEN",
-        "image": "img/raise_a_suilen.png",
+        "image": "img/ras.webp",
         "link": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
     },
     {
         "band": "Morfonica",
-        "image": "img/morfonica.png",
+        "image": "img/morfonica.webp",
         "link": "https://bandori.fandom.com/wiki/Morfonica"
     },
     {
         "band": "MyGO!!!!!",
-        "image": "img/mygo.png",
+        "image": "img/mygo.webp",
         "link": "https://bandori.fandom.com/wiki/MyGO!!!!!"
     },
     {
         "band": "Ave Mujica",
-        "image": "img/ave_mujica.png",
+        "image": "img/mujica.webp",
         "link": "https://bandori.fandom.com/wiki/Ave_Mujica"
     },
     {
         "band": "Mugendai Mewtype",
-        "image": "img/mugendai_mewtype.png",
+        "image": "img/mewtype.webp",
         "link": "https://bandori.fandom.com/wiki/Mugendai_Mewtype"
     }
 ]
