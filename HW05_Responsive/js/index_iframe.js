@@ -1,0 +1,134 @@
+$(document).ready(function() {
+
+    init();
+
+    function init() {
+        // 1. load data
+        loadJSON("../data/time_line.json", function() {
+
+            // 2. gen_content
+            genContent();
+
+        });
+    }
+
+    var data = [];
+
+    function loadJSON(src, callback) {
+        $.getJSON(src, function(res) {
+            data = res;
+            callback(); // 加载完再执行
+        });
+    }
+
+
+    function genContent() {
+
+        // 3.1 base-gen
+        // TODO:
+        // - clear container
+        // - maybe create wrapper / layout structure
+        var container = $('.timeline');
+        container.empty();
+        // base gen is deprecated since we already have the structure in html, we can directly gen items and append to container
+
+        // 3.2 loop items
+        data.forEach(function(item) {
+
+            // 3.3 gen_item
+            var element = genItem(item, item.side);
+
+            // 3.4 append to container
+            // TODO:
+            // append element to .main-content
+            container.append(element);
+
+        });
+    }
+
+
+    // =========================
+    // 4. gen_item
+    // =========================
+    function genItem(item, item_type) {
+
+        // TODO:
+        // - create html structure
+        // - fill with item data
+        var html = ``;
+
+        if (item_type === "left") {
+        html = `
+            <div class="timeline-item ${item_type}">
+                <img src="${item.image}" alt="${item.date}">
+                <div class="timeline-content">
+                    <h3>${item.date}</h3>
+                    <p>${item.description}</p>
+                </div>
+            </div>
+        `;
+        } else {
+            html = `
+            <div class="timeline-item ${item_type}">
+                <img src="${item.image}" alt="${item.date}">
+                <div class="timeline-content">
+                    <h3>${item.date}</h3>
+                    <p>${item.description}</p>
+                </div>
+            </div>
+            `;
+        }
+
+        // return generated element
+        return html;
+    }
+
+});
+
+// $(document).ready(function() {
+//     $("#btn").click(function() {
+//         alert("Hello jQuery!");
+//     });
+// });
+// // this script will follow:
+// // 1. load data
+// // 2. gen_content:
+// //      base-gen
+// //      gen_item(for item in data)
+// //      append the generated item to the container
+// // 3. gen_item
+
+
+
+// // load data:
+// var data = [];
+// function loadJSON(src, callback) {
+//     $.getJSON(src, function(res) {
+//         data = res;
+//         callback(); // 加载完再执行
+//     });
+// }
+// // gen content:
+// function genContent() {
+//     // base gen:
+//     // todo
+//     // gen items:
+//     data.forEach(item => {
+//         genItem(item);
+//     });
+// }
+
+// // pick the element:
+// function genItem(item) {
+//     const html = `
+//         <div class="node">
+//             <img src="${item.img}" alt="">
+//             <h3>${item.title}</h3>
+//             <p>${item.desc}</p>
+//         </div>
+//     `;
+    
+//     $('.main-content').append(html);
+// }
+
+// $(".main-content")

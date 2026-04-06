@@ -7,8 +7,8 @@
   --tabs-background-color: rgba(224, 79, 115, 0.2);
   --banner-linear-gradient: linear-gradient(to right, var(--BanGDreamRed), var(--BanGDreamBlue));
     --scroll-linear-gradient: linear-gradient(to bottom, var(--BanGDreamRed), var(--BanGDreamBlue));
-    --place-holder-bullshit-zh: "在当代复杂系统的多维语境下，我们不得不重新审视那些被忽视的潜在结构性矛盾。换句话说，当局部最优逐渐逼近全局不稳定时，一种看似合理的路径依赖，反而可能成为系统性偏差的根源。进一步来说，如果我们从更宏观的角度进行抽象，就会发现，问题本身并不在于问题，而在于我们如何定义问题。因为一旦定义发生偏移，解决方案也就不可避免地偏离了原有的预期轨道。当然，这并不意味着我们应该完全放弃已有的框架。恰恰相反，在一定程度上，正是这些框架为我们提供了一个可以被反复质疑、不断修正的参照系。没有参照，就没有偏差；没有偏差，也就谈不上优化。因此，在这个意义上，废话本身并不是无意义的。它是一种信息密度极低但结构完整的表达形式，既避免了结论的责任，又保留了思考的姿态。可以说，这是一种语言上的安全区。归根结底，我们所追求的，也许并不是答案，而是那种在不断逼近答案过程中所产生的仿佛已经理解了一切的错觉。";
-    --place-holder-bullshit-en: "In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it.";
+    /* --place-holder-bullshit-zh: "在当代复杂系统的多维语境下，我们不得不重新审视那些被忽视的潜在结构性矛盾。换句话说，当局部最优逐渐逼近全局不稳定时，一种看似合理的路径依赖，反而可能成为系统性偏差的根源。进一步来说，如果我们从更宏观的角度进行抽象，就会发现，问题本身并不在于问题，而在于我们如何定义问题。因为一旦定义发生偏移，解决方案也就不可避免地偏离了原有的预期轨道。当然，这并不意味着我们应该完全放弃已有的框架。恰恰相反，在一定程度上，正是这些框架为我们提供了一个可以被反复质疑、不断修正的参照系。没有参照，就没有偏差；没有偏差，也就谈不上优化。因此，在这个意义上，废话本身并不是无意义的。它是一种信息密度极低但结构完整的表达形式，既避免了结论的责任，又保留了思考的姿态。可以说，这是一种语言上的安全区。归根结底，我们所追求的，也许并不是答案，而是那种在不断逼近答案过程中所产生的仿佛已经理解了一切的错觉。";
+    --place-holder-bullshit-en: "In the multidimensional context of complex systems today, we must revisit overlooked structural contradictions. In other words, when local optimization approaches global instability, a seemingly reasonable path dependence can become the root of systematic bias. From a broader perspective, we may find that the problem is not the problem itself, but how we define it. Once the definition shifts, solutions inevitably drift away from the expected track. This does not mean we should abandon existing frameworks. On the contrary, such frameworks provide a reference point that can be repeatedly questioned and refined. Without a reference, there is no deviation; without deviation, there is no optimization. In this sense, so-called nonsense is not meaningless. It is a low-density yet structurally complete form of expression that avoids the responsibility of conclusions while preserving the posture of thinking. Ultimately, what we pursue may not be the answer itself, but the illusion of having understood everything while continuously approaching it."; */
 }
 
 *{
@@ -267,24 +267,15 @@ nav {
 }
 
   .main-content-index iframe{
+    overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    padding: -12px;
     height: 100%;
     width: 100%;
     border: none;
     border-radius: 12px;
   }
 
-/* .main-content-index::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background: white;
-    transform: translateX(-50%);
-} */
 
 .main-content-band{
     grid-column: 4/13;

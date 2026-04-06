@@ -1,158 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Fishbone Timeline</title>
+    <meta charset="UTF-8">
+    <title>Fishbone Timeline</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
 
-<style>
-body {
-    background: #f4d6dc;
-    font-family: sans-serif;
-}
 
-/* 整个容器 */
-.timeline {
-    position: relative;
-    width: 800px;
-    margin: 100px auto;
-}
+        /* 整个容器 */
+        .timeline {
+            position: relative;
+            width: 800px;
+            margin: 100px auto;
+        }
 
-/* 中间那条“鱼骨” */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background: white;
-    transform: translateX(-50%);
-}
+        /* 中间那条“鱼骨” */
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: white;
+            transform: translateX(-50%);
+        }
 
-/* 每个节点 */
-.timeline-item {
-    position: relative;
-    width: 50%;
-    padding: 20px 40px;
-    box-sizing: border-box;
-}
+        /* 每个节点 */
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
 
-/* 左边 */
-.timeline-item.left {
-    left: 0;
-    text-align: right;
-}
+        /* 左边 */
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
 
-/* 右边 */
-.timeline-item.right {
-    left: 50%;
-}
+        /* 右边 */
+        .timeline-item.right {
+            left: 50%;
+        }
 
-/* 中间的点（星星/圆点） */
-.timeline-item::before {
-    content: "★"; /* 你可以换成图片 */
-    position: absolute;
-    top: 30px;
-    left: 100%;
-    transform: translateX(-50%);
-    background: pink;
-    color: white;
-    border-radius: 50%;
-    padding: 6px;
-    z-index: 1;
-}
+        /* 中间的点（星星/圆点） */
+        .timeline-item::before {
+            content: "★"; /* 你可以换成图片 */
+            position: absolute;
+            font-size: 36px;
+            top: 30px;
+            left: 100%;
+            transform: translateX(-50%);
+            color: rgba(255, 77, 109, 1);
+            border-radius: 50%;
+            padding: 6px;
+            z-index: 1;
+        }
 
-/* 右边需要调整点的位置 */
-.timeline-item.right::before {
-    left: 0;
-}
+        /* 右边需要调整点的位置 */
+        .timeline-item.right::before {
+            left: 0;
+        }
 
-/* 内容卡片 */
-.content {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-}
+        /* 内容卡片 */
+        .content {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-/* 小装饰 */
-.content img {
-    width: 100%;
-    border-radius: 8px;
-}
-</style>
+        /* 小装饰 */
+        .content img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="timeline-header">
+            <h1>Explore the Timeline</h1>
+    </div>
+    <h1 class = "our-story">Our Story Continues...</h1>
+    </div>
+    <div class="timeline"></div>
 
-<div class="timeline">
 
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>Ave Mujica Anime</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Apr 2023</h3>
-            <p>Debut of Ave Mujica</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-</div>
-
+    <!-- loading jQuery -->
+    <script src="js/index_iframe.js"></script>
 </body>
 </html>
