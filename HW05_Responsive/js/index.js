@@ -35,6 +35,7 @@ $(document).ready(function() {
             <div class="timeline-header">
                 <h1>Explore the Timeline</h1>
             </div>
+            <h1 class = "our-story">Our Story Continues...</h1>
         `;
         container.append(base_html);
 

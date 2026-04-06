@@ -321,7 +321,12 @@ nav {
 .timeline-header h1{
     margin: 0;
 }
-
+.our-story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .timeline-item.left, .timeline-item.right {
     display: flex;
     flex-direction: row;
@@ -348,6 +353,49 @@ nav {
     border-radius: 12px;
     /* background-color: white; */
     flex: 1 1 0;
+}
+
+
+/* the band */
+.band-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.band-item img{
+  border-radius: 10px;
+}
+
+.band-item div{
+  background-color: var(--BanGDreamRed);
+}
+
+.band-item div a{
+  color: white;
+  text-decoration: none;
+  /* font-size: 18px; */
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* lib */
+.lib-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.lib-content a{
+  text-decoration: none;
+}
+
+.lib-content a h1{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
 }
 
 /* footer */
