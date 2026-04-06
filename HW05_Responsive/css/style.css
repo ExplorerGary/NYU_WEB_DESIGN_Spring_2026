@@ -236,7 +236,7 @@ nav {
     padding: 16px;
     border-radius: 12px;
 
-    background: rgba(255,255,255,0.1);
+    background: var(--the-background-color);
 }
 
 /* footer */
@@ -249,10 +249,10 @@ nav {
     gap: 20px;
 }
 .footer-title {
-    font-size: 128px;
+    font-size: 84px;
     text-align: center;
     margin: 0;
-    padding: 20px 24px;
+    padding: 16px 16px;
     min-height: 144px;
     display: flex;
     justify-content: center;
@@ -338,7 +338,7 @@ nav {
         width: 100%;
         margin: 0 auto;
         gap: 20px;
-        padding: 12px 16px;
+        padding: 0 0 0 0 ;
     }
 
     /* footer */
