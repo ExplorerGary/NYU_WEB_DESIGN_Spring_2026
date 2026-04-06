@@ -4,68 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline_style.css">
     <title>TimeLine</title>
     <!-- prepare jQuery -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 
      <!-- demo style -->
-    <style>
-        .timeline {
-  position: relative;
-  width: min(900px, 92vw);
-  margin: 80px auto;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #fff;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin: 28px 0;
-}
-
-.timeline-item .content {
-  background: #fff;
-  border-radius: 10px;
-  padding: 14px;
-  max-width: 320px;
-}
-
-.timeline-item.left .content {
-  justify-self: end;
-  margin-right: 36px;
-}
-
-.timeline-item.right .content {
-  justify-self: start;
-  margin-left: 36px;
-}
-
-.timeline-item::before {
-  content: "★";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: pink;
-  color: #fff;
-  border-radius: 50%;
-  padding: 6px;
-  z-index: 1;
-}
-    </style>
       <!-- <style>
         body {
             background: #f4d6dc;
@@ -147,74 +92,9 @@
 <body>
 
 <div class="timeline">
-
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>Ave Mujica Anime</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Apr 2023</h3>
-            <p>Debut of Ave Mujica</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
-    <div class="timeline-item left">
-        <div class="content">
-            <h3>Feb 2026</h3>
-            <p>Bandori 10th Anniversary Live</p>
-        </div>
-    </div>
-
-    <div class="timeline-item right">
-        <div class="content">
-            <h3>Jan 2026</h3>
-            <p>New Game OurNotes Release</p>
-        </div>
-    </div>
+    <!-- timeline items will be injected here by JavaScript -->
+        <!-- loading jQuery -->
 </div>
-
+        <script src="js/index.js"></script>
 </body>
 </html>

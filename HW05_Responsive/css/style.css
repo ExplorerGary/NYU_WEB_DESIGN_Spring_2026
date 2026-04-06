@@ -259,14 +259,21 @@ nav {
     margin: 48px;
     box-sizing: border-box;
 
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 
     padding: 16px;
     border-radius: 12px;
-
-    background: var(--the-background-color);
 }
+
+  .main-content-index iframe{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+  }
 
 /* .main-content-index::before {
     content: "";
