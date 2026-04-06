@@ -1,0 +1,52 @@
+[
+    {
+        "band": "Poppin'Party",
+        "image": "img/poppin_party.png",
+        "link": "https://bandori.fandom.com/wiki/Poppin%27Party"
+    },
+    {
+        "band": "Afterglow",
+        "image": "img/afterglow.png",
+        "link": "https://bandori.fandom.com/wiki/Afterglow"
+    },
+    {
+        "band": "Pastel*Palettes",
+        "image": "img/pastel_palettes.png",
+        "link": "https://bandori.fandom.com/wiki/Pastel%2APalettes"
+    },
+    {
+        "band": "Roselia",
+        "image": "img/roselia.png",
+        "link": "https://bandori.fandom.com/wiki/Roselia"
+    },
+    {
+        "band": "Hello, Happy World!",
+        "image": "img/hello_happy_world.png",
+        "link": "https://bandori.fandom.com/wiki/Hello,_Happy_World!"
+    },
+    {
+        "band": "RAISE A SUILEN",
+        "image": "img/raise_a_suilen.png",
+        "link": "https://bandori.fandom.com/wiki/RAISE_A_SUILEN"
+    },
+    {
+        "band": "Morfonica",
+        "image": "img/morfonica.png",
+        "link": "https://bandori.fandom.com/wiki/Morfonica"
+    },
+    {
+        "band": "MyGO!!!!!",
+        "image": "img/mygo.png",
+        "link": "https://bandori.fandom.com/wiki/MyGO!!!!!"
+    },
+    {
+        "band": "Ave Mujica",
+        "image": "img/ave_mujica.png",
+        "link": "https://bandori.fandom.com/wiki/Ave_Mujica"
+    },
+    {
+        "band": "Mugendai Mewtype",
+        "image": "img/mugendai_mewtype.png",
+        "link": "https://bandori.fandom.com/wiki/Mugendai_Mewtype"
+    }
+]

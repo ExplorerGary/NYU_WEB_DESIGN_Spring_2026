@@ -1,0 +1,81 @@
+
+[
+  {
+    "date": "Feb 2026",
+    "description": "Bandori 10th Anniversary Live 'In the Name of BanGDream!' at Yokohama K Arena",
+    "image": "img/event1.png",
+    "side": "left"
+  },
+  {
+    "date": "Jan 2026",
+    "description": "New game Our Notes is scheduled to release in 2026",
+    "image": "img/event2.png",
+    "side": "right"
+  },
+  {
+    "date": "Jan 2026",
+    "description": "Anime BanG Dream Ave Mujica begins airing",
+    "image": "img/event3.png",
+    "side": "left"
+  },
+  {
+    "date": "May 2025",
+    "description": "Poppin'Party 10th Anniversary LIVE 'Hoshi no Kodou' at Nippon Budokan",
+    "image": "img/event7.png",
+    "side": "right"
+  },
+  {
+    "date": "Jun 2023",
+    "description": "Anime BanG Dream! It's MyGO!!!!! begins airing",
+    "image": "img/event5.png",
+    "side": "left"
+  },
+  {
+    "date": "Apr 2023",
+    "description": "Ave Mujica joins BanG Dream!",
+    "image": "img/event4.png",
+    "side": "right"
+  },
+  {
+    "date": "Apr 2022",
+    "description": "MyGO!!!!! joins BanG Dream!",
+    "image": "img/event6.png",
+    "side": "left"
+  },
+  {
+    "date": "Jun 2020",
+    "description": "RAISE A SUILEN joins BanG Dream!",
+    "image": "img/event_7.png",
+    "side": "right"
+  },
+  {
+    "date": "Mar 2020",
+    "description": "Morfonica joins BanG Dream!",
+    "image": "img/event_8.png",
+    "side": "left"
+  },
+  {
+    "date": "Mar 2017",
+    "description": "The Game BanG Dream! Girls Band Party! Launched!",
+    "image": "img/event_9.png",
+    "side": "right"
+  },
+  {
+    "date": "Jan 2017",
+    "description": "BanG Dream! 1st Season begins airing",
+    "image": "img/event_10.png",
+    "side": "left"
+  },
+  {
+    "date": "Apr 2015",
+    "description": "1st Live 'I started a band in spring!' held at Shimokitazawa",
+    "image": "img/event_11.png",
+    "side": "right"
+  },
+  {
+    "date": "Jan 2015",
+    "description": "Project BanG Dream! officially announced!",
+    "image": "img/event_12.png",
+    "side": "left"
+  }
+]

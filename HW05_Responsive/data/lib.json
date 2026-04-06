@@ -1,0 +1,62 @@
+[
+    {
+        "title": "BanG Dream! 10th Anniversary Live",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "cover": "img/live_10th.png",
+        "type": "live"
+    },
+    {
+        "title": "Poppin'Party! 10th Anniversary Live",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "cover": "img/live_ppp10th.png",
+        "type": "live"
+    },
+    {
+        "title": "Kizuna Music♪",
+        "link": "https://open.spotify.com/search/Kizuna%20Music%20Poppin%27Party",
+        "cover": "img/kizuna_music.png",
+        "type": "single"
+    },
+    {
+        "title": "Hoshikage no Encore",
+        "link": "https://open.spotify.com/search/Hoshikage%20no%20Encore%20MyGO",
+        "cover": "img/hoshikage.png"
+    },
+    {
+        "title": "KILLKISS",
+        "link": "https://open.spotify.com/search/KILLKISS%20Ave%20Mujica",
+        "cover": "img/killkiss.png",
+        "type": "single"
+    },
+    {
+        "title": "FIRE BIRD",
+        "link": "https://open.spotify.com/search/FIRE%20BIRD%20Roselia",
+        "cover": "img/firebird.png",
+        "type": "single"
+    },
+    {
+        "title": "A to Z",
+        "link": "https://open.spotify.com/search/A%20to%20Z%20Pastel%20Palettes",
+        "cover": "img/atoz.png",
+        "type": "single"
+    },
+    {
+        "title": "Shuwarin☆Dreaming",
+        "link": "https://open.spotify.com/search/Shuwarin%20Dreaming%20Pastel%20Palettes",
+        "cover": "img/shuwarin.png",
+        "type": "single"
+
+    },
+    {
+        "title": "Neo-Aspect",
+        "link": "https://open.spotify.com/search/Neo-Aspect%20Roselia",
+        "cover": "img/neo_aspect.png",
+        "type": "single"
+    },
+    {
+        "title": "Hoshi no Yakusoku",
+        "link": "https://open.spotify.com/search/Hoshi%20no%20Yakusoku%20Morfonica",
+        "cover": "img/hoshi_no_yakusoku.png",
+        "type": "single"
+    }
+]
