@@ -17,7 +17,7 @@ $(document).ready(function() {
     function loadJSON(src, callback) {
         $.getJSON(src, function(res) {
             data = res;
-            callback(); // 加载完再执行
+            callback(); 
         });
     }
 
