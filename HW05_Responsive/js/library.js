@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function init() {
         // 1. load data
-        loadJSON("../data/lib-full.json", function() {
+        loadJSON("data/lib-full.json", function() {
 
             // 2. gen_content
             genContent();
@@ -75,7 +75,7 @@ $(document).ready(function() {
                     <h1>${item.band}</h1>
                 </a>
                 <a href = ${item.link} target = "_blank">
-                    <img class = "lib-play_button" src = "../img/youtube.svg" alt = "link">
+                    <img class = "lib-play_button" src = "img/youtube.svg" alt = "link">
                 </a>
             </div>
         `;
@@ -90,7 +90,7 @@ $(document).ready(function() {
                     <h1>${item.band}</h1>
                 </a>
                 <a href = ${item.link} target = "_blank">
-                    <img class = "lib-play_button" src = "../img/spotify.svg" alt = "link">
+                    <img class = "lib-play_button" src = "img/spotify.svg" alt = "link">
                 </a>
             </div>
             `;

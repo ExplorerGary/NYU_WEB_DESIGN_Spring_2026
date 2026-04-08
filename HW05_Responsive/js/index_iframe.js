@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function init() {
         // 1. load data
-        loadJSON("../data/time_line.json", function() {
+        loadJSON("data/time_line.json", function() {
 
             // 2. gen_content
             genContent();

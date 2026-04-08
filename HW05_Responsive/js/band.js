@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function init() {
         // 1. load data
-        loadJSON("../data/band.json", function() {
+        loadJSON("data/band.json", function() {
 
             // 2. gen_content
             genContent();

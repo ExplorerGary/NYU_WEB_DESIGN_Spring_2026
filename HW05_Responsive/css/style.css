@@ -338,7 +338,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  border: 1px solid var(--BanGDreamRed);
+  /* border: 1px solid var(--BanGDreamRed); */
 }
 
 .band-item h1{
@@ -372,7 +372,7 @@ nav {
   justify-content: stretch;
   align-items: center;
   gap: 36px;
-  border: 1px solid var(--BanGDreamRed);
+  /* border: 1px solid var(--BanGDreamRed); */
 }
 
 .lib-content a{
@@ -572,6 +572,7 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 24px;
+        padding: 4px 0 8px 0;
     }
     .band-item{
       border: none;
