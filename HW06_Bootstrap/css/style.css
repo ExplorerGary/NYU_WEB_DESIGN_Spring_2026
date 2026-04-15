@@ -5,3 +5,17 @@
     /* padding: 10px;
     margin: 10px; */
 }
+
+.donotfill{
+    height: 40vh;
+    width: 100%;
+}
+
+.the_nav{
+    border: 1px solid blue;
+    padding: 0;
+}
+
+.no_margin{
+    margin: 0;
+}
