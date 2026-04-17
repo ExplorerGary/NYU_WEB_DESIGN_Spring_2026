@@ -8,14 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- my own decoration -->
     <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="refresh" content="10; url=index.html">
 </head>
 <body>
+    <!-- this is the thank you page, we just need a rolling slide showing our great work, that's it. 5 seconds later
+    user will be redirected to the home page -->
     <!-- <div class = "container"> -->
     <div class = "container-fluid">
         <!-- the alert -->
         <div class = "row">
             <div id="top-alert" class="alert alert-primary fade show" role="alert">
-                 Penguins Are in Crisis — Their Very Existence Is Threatened! <a href = "donate.html" class="alert-link">Donate Now!</a> to Help Save These Adorable Creatures!
+                 Thank you for your support! You will be redirected to the <a href="index.html">home page</a> in 10 seconds.
             </div> 
         </div>  
         <!-- nav -->
@@ -64,7 +67,7 @@
         <div class = "row">
             <div class = "col-12">
                 <!-- rolling slides -->
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="false">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -72,24 +75,24 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/hero_ice_melt.jpg" class="d-block w-100 slideImage" alt="A picture showing ice melt from a data center.">
+                            <img src="images/mission_recording.jpg" class="d-block w-100 slideImage" alt="A picture showing ice melt from a data center.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Ice Melt</h5>
-                                <p>Climate change is affecting our planet.</p>
+                                <h5>You are making a difference!</h5>
+                                <p>Because of you, we can document penguins in their natural habitat — capturing stories that must be told.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/hero_oil_leak.jpg" class="d-block w-100 slideImage" alt="A picture showing oil leak in the ocean.">
+                            <img src="images/mission_cleaning_penguin.jpg" class="d-block w-100 slideImage" alt="A picture showing oil leak in the ocean.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Oil Leak</h5>
-                                <p>Water is life and must be protected.</p>
+                                <h5>You are making a difference!</h5>
+                                <p>Because of you, we can act quickly to save penguins from oil spills and crisis.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/hero_overfishing.webp" class="d-block w-100 slideImage" alt="A picture showing overfishing in the ocean.">
+                            <img src="images/mission_release_penguin.jpg" class="d-block w-100 slideImage" alt="A picture showing overfishing in the ocean.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Overfishing</h5>
-                                <p>Marine ecosystems are under threat.</p>
+                                <h5>You are making a difference!</h5>
+                                <p>Because of you, these penguins are given a second chance to return home.</p>
                             </div>
                         </div>
                     </div>
@@ -105,68 +108,7 @@
                 <!-- rolling slides ends -->
             </div>
         </div>
-        
-        <!-- <div class = "row">
-            <div class = "col-12">
-                rolling slides here
-            </div>
-        </div> -->
-        <!-- statics -->
-        <div class="row">
-            <div class="col-12">
-                <h1>Penguins are calling for <a href="donate.html"><span style="font-weight: 1000;">AID!</span></a></h1>
-                
-                <p>Just like the scenes you saw moments ago — vanishing ice, poisoned waters, and empty oceans — penguins are being pushed to the edge of survival. These are not future warnings; they are happening right now, every single day.</p>
-                
-                <p>They may look like clumsy little tuxedos, but penguins are the living alarm bells of our planet. When they suffer, the entire Antarctic ecosystem suffers with them. The threats are real, the clock is ticking, and they cannot fight this battle alone.</p>
-                
-                <p>The numbers are terrifying. Here’s what’s really happening to them:</p>
-            </div>
-        </div>
-        <div class = "row flex-row justify-content-around d-flex align-items-stretch">
-            <div class = "col-4 statics_card">
-                <!-- a card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="images/issue_krill_overfishing.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Food Chain Collapse</h5>
-                        <h2 class="card-title text-danger">80%</h2>
-                        <p class="card-text">of the krill population has been wiped out in key Antarctic waters. Penguins that depend almost entirely on krill are starving and following the same deadly path.</p>
-                        <a href="donate.html" class="btn btn-primary">Donate to Protect Their Food Source</a>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-4">
-                <!-- a card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="images/issue_oil_soaked_penguin.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Spill Disaster</h5>
-                        <h2 class="card-title text-danger">1 drop</h2>
-                        <p class="card-text">of oil is enough to soak a penguin’s feathers, destroy their insulation, and cause them to freeze to death in the icy waters within minutes. Thousands have already died this way.</p>
-                        <a href="donate.html" class="btn btn-primary">Donate to Clean Up Oil Spills</a>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-4">
-                <!-- a card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="images/issue_melting_ice.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Habitat Melts Away</h5>
-                        <h2 class="card-title text-danger">10,000+</h2>
-                        <p class="card-text">penguins have fallen into the freezing ocean and drowned in recent years as their sea ice breeding platforms suddenly collapsed beneath them. Their homes are literally melting away.</p>
-                        <a href="donate.html" class="btn btn-primary">Donate to Combat Climate Change</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- some show down -->
-        <!-- <div class = "row">
-            <div class = "col-12">
-                showdown
-            </div>            
-        </div> -->
+    
         <!-- footer -->
         <div class = "row">
             <div class="col-md-6 d-flex justify-content-evenly align-items-center" id="socialMedia">
@@ -185,10 +127,10 @@
 
             </div>
             <div class="col-md-6">
-                <h1>Sign Up for News Letter</h1>
+                <h1>Join the Mailing List</h1>
                <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2">
-                    <a href = 'thankyou.html'>
+                    <a href = '#'>
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
                     </a>
                 </div>
