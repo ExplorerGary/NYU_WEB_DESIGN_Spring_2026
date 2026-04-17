@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row marginBottom">
             <div class="col-md-12 noPadding">
                 <!-- Navigation Starts here -->
@@ -44,7 +44,10 @@
                         </ul>
                         <!-- <form class="d-flex" role="search"> -->
                             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> -->
+                            
+                            
                             <a href="donation.html">
+                                
                                 <button type="button" class="btn btn-success">Donate</button>
                             </a>
                         <!-- </form> -->
@@ -102,8 +105,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <button type="button" class="btn btn-success">Contribute Now!</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Donate Now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Stay with Them, Month after Month</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Saving wildlife isn’t a single moment.</p>
+                            <p>It’s a long, quiet commitment</p>
+                            <p>With a small monthly donation, you help us continue the work that never stops— protecting penguins, restoring ecosystems, and giving life a second chance.</p>
+                            <p>Even the smallest support matters—when it lasts.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="thankyou.html">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+                            </a>
+                            <a href="thankyou.html">
+                                <button type="button" class="btn btn-primary">Start Monthly Giving</button>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
 
@@ -111,30 +141,32 @@
             </div>
         </div>
         
-        <footer class="row">
+           <div class = "row">
             <div class="col-md-6 d-flex justify-content-evenly align-items-center" id="socialMedia">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com/PenguinsIntl/" target="_blank">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="bi bi-linkedin"></i>
+                <a href="https://x.com/PenguinsIntl" target="_blank">
+                    <i class="bi bi-twitter"></i>
                 </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="bi bi-tiktok"></i>
+                <a href="https://www.instagram.com/penguins_international/" target="_blank">
+                    <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.youtube.com/c/PenguinsInternational" target="_blank">
                     <i class="bi bi-youtube"></i>
                 </a>
 
             </div>
             <div class="col-md-6">
-                <h1>Join the Mailing List</h1>
+                <h1>Sign Up for News Letter</h1>
                <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                    <a href = 'thankyou.html'>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+                    </a>
                 </div>
-            </div>
-        </footer>
+            </div>                
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
