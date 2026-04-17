@@ -1,61 +1,163 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 :root {
-    --penguin-blue: #233C6A;    
+    --penguin-blue: #233C6A;
+
+    --blue-900: #10223f;
+    --blue-800: #1a2e52;
+    --blue-700: #233c6a;
+    --blue-500: #3e5f9a;
+    --blue-300: #7f9fd1;
+    --blue-100: #e8effa;
+
+    --gray-900: #1f2937;
+    --gray-700: #4b5563;
+    --gray-400: #9ca3af;
+    --gray-200: #dbe2ee;
+    --gray-100: #f5f8fc;
+    --white: #FFFFFF;
+
+    --glow-soft: 0 0 0 1px rgba(127, 159, 209, 0.35), 0 8px 22px rgba(26, 46, 82, 0.16);
+    --glow-strong: 0 0 0 1px rgba(127, 159, 209, 0.65), 0 16px 34px rgba(26, 46, 82, 0.26);
 }
 
-
-.container-fluid, .col-12, .col-6, .col-4 {
-    border: 1px solid black;
-    /* padding: 10px;
-    margin: 10px; */
+/* Topology Layer 1: global framing */
+body {
+    background: linear-gradient(180deg, #f7fbff 0%, #eef4ff 100%);
+    color: var(--gray-900);
 }
 
-.donotfill{
-    height: 40vh;
-    width: 100%;
+.container-fluid,
+.col-12,
+.col-6,
+.col-4 {
+    border: none;
 }
 
-.the_nav{
-    border: 1px solid blue;
+/* Topology Layer 2: navigation system */
+.the_nav {
+    border: none;
     padding: 0;
 }
 
-.no_margin{
+.no_margin {
     margin: 0;
+}
+
+.the_nav .navbar {
+    background: linear-gradient(90deg, var(--blue-900) 0%, var(--blue-700) 100%) !important;
+    box-shadow: 0 6px 16px rgba(16, 34, 63, 0.2);
+}
+
+.the_nav .navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+.the_nav .nav-link,
+.the_nav .navbar-brand,
+.the_nav .dropdown-toggle {
+    color: var(--white) !important;
+}
+
+.the_nav .nav-link:hover,
+.the_nav .dropdown-toggle:hover,
+.the_nav .nav-link:focus,
+.the_nav .dropdown-toggle:focus {
+    color: var(--blue-100) !important;
+}
+
+.the_nav .dropdown-menu {
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 8px 18px rgba(16, 34, 63, 0.16);
+}
+
+.the_nav .btn.btn-primary {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--white);
+}
+
+.the_nav .btn.btn-primary:hover,
+.the_nav .btn.btn-primary:focus {
+    background: var(--white);
+    color: var(--blue-800);
 }
 
 .slideImage {
     filter: brightness(60%);
 }
 
-/* .static_card{
-    justify-content: center;
-    align-items: center;
-} */
-.card_body{
+/* Topology Layer 3: shared utility */
+.donotfill {
+    height: 40vh;
+    width: 100%;
+}
+
+.card_body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.card-title{
-    font-size: 3rem;
-    font-weight: 750;
-    text-align: center;
+/* Topology Layer 4: index cards (do not change big number style) */
+.row.flex-row .card {
+    width: min(100%, 33rem) !important;
+    border: 1px solid var(--gray-200);
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #fbfdff 0%, #f1f6ff 100%);
+    box-shadow: var(--glow-soft);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.text-highlight{
-    color : var(--penguin-blue) !important;
+.row.flex-row .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--glow-strong);
+}
+
+.row.flex-row .card-img-top {
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.row.flex-row .card .card-body {
+    background: linear-gradient(180deg, #f8fbff 0%, #edf3ff 100%);
+}
+
+.row.flex-row .card .card-body > h5.card-title {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: var(--blue-800);
+    letter-spacing: 0.2px;
+    margin-bottom: 0.3rem;
+}
+
+.text-highlight {
+    color: var(--penguin-blue) !important;
     font-weight: 1000;
     font-size: 72px;
     text-align: center;
+    margin: 0.25rem 0 0.75rem;
 }
 
-.card-text{
-    font-size: 2rem;
-    text-align: stretch;
+.row.flex-row .card .card-text {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--gray-700);
+    margin-bottom: 1.15rem;
+}
+
+.row.flex-row .card .btn.btn-primary {
+    border: 1px solid var(--blue-700);
+    background: var(--blue-700);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(35, 60, 106, 0.2);
+}
+
+.row.flex-row .card .btn.btn-primary:hover,
+.row.flex-row .card .btn.btn-primary:focus {
+    background: var(--blue-500);
+    border-color: var(--blue-500);
 }
 
 
