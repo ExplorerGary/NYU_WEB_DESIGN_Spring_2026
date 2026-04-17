@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/custom.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -71,27 +71,37 @@
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/hero_ice_melt.jpg" class="d-block w-100 slideImage" alt="A picture showing ice melt from a data center.">
+                            <img src="images/about_feeding.jpg" class="d-block w-100 slideImage" alt="A picture showing ice melt from a data center.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Ice Melt</h5>
-                                <p>Climate change is affecting our planet.</p>
+                                <h5>Feeding</h5>
+                                <p>A starving penguin gets the food it needs to survive.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img src="images/about_cleaning.jpg" class="d-block w-100 slideImage" alt="A picture showing research being conducted on penguins.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cleaning</h5>
+                                <p>A penguin is rescued and cleaned after a toxic oil spill.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/hero_oil_leak.jpg" class="d-block w-100 slideImage" alt="A picture showing oil leak in the ocean.">
+                            <img src="images/mission_release_penguin.jpg" class="d-block w-100 slideImage" alt="A picture showing overfishing in the ocean.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Oil Leak</h5>
-                                <p>Water is life and must be protected.</p>
+                                <h5>Back to the Wild</h5>
+                                <p>A rehabilitated penguin returns safely to the ocean.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/hero_overfishing.webp" class="d-block w-100 slideImage" alt="A picture showing overfishing in the ocean.">
+                    <div class="carousel-item">
+                            <img src="images/mission_recording.jpg" class="d-block w-100 slideImage" alt="A picture showing oil leak in the ocean.">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Overfishing</h5>
-                                <p>Marine ecosystems are under threat.</p>
+                                <h5>Monitoring</h5>
+                                <p>Scientists track penguins to prevent the next crisis.</p>
                             </div>
                         </div>
                     </div>
@@ -117,24 +127,24 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$5</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn5">$5</button>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$10</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn10">$10</button>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$25</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn25">$25</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$50</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn50">$50</button>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$100</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn100">$100</button>
                     </div>
                     <div class="col-md-4">
-                        <button type="button" class="btn btn-light donBtn">$250</button>
+                        <button type="button" class="btn btn-light donBtn" id = "donBtn250">$250</button>
                     </div>
                 </div>
                 <div class="row">
@@ -147,29 +157,33 @@
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Stay with Them, Month after Month</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Saving wildlife isn’t a single moment.</p>
-                            <p>It’s a long, quiet commitment</p>
-                            <p>With a small monthly donation, you help us continue the work that never stops— protecting penguins, restoring ecosystems, and giving life a second chance.</p>
-                            <p>Even the smallest support matters—when it lasts.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="thankyou.html">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
-                            </a>
-                            <a href="thankyou.html">
-                                <button type="button" class="btn btn-primary">Start Monthly Giving</button>
-                            </a>
-                        </div>
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Stay with Them, Month after Month</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Saving wildlife isn’t a single moment.</p>
+                                <p>It’s a long, quiet commitment</p>
+                                <p>With a small monthly donation, you help us continue the work that never stops— protecting penguins, restoring ecosystems, and giving life a second chance.</p>
+                                <p>Even the smallest support matters—when it lasts.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="thankyou.html">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Maybe Later</button>
+                                </a>
+                                <a href="thankyou.html">
+                                    <button type="button" class="btn btn-primary">Start Monthly Giving</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     </div>
                 </div>
-
+                <!-- another row, where we use the jquery to show the impact of each donation -->
+                <div class="row">
+                    <div class="col-12" id = "donation_impact">
+                    </div>
+                </div>
 
             </div>
         </div>
