@@ -19,6 +19,9 @@
 
     --glow-soft: 0 0 0 1px rgba(127, 159, 209, 0.35), 0 8px 22px rgba(26, 46, 82, 0.16);
     --glow-strong: 0 0 0 1px rgba(127, 159, 209, 0.65), 0 16px 34px rgba(26, 46, 82, 0.26);
+
+    --hero-height-desktop: 95vh;
+    --hero-height-mobile: 42vh;
 }
 
 /* Topology Layer 1: global framing */
@@ -83,8 +86,30 @@ body {
     color: var(--blue-800);
 }
 
+#carouselExampleCaptions {
+    height: var(--hero-height-desktop);
+    max-height: var(--hero-height-desktop);
+    overflow: hidden;
+}
+
+#carouselExampleCaptions .carousel-item {
+    height: var(--hero-height-desktop);
+}
+
 .slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     filter: brightness(60%);
+}
+
+@media (max-width: 575.98px) {
+    #carouselExampleCaptions,
+    #carouselExampleCaptions .carousel-item {
+        height: var(--hero-height-mobile);
+        max-height: var(--hero-height-mobile);
+    }
 }
 
 /* Topology Layer 3: shared utility */
