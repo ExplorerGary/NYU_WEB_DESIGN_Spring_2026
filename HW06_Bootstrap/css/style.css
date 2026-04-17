@@ -63,4 +63,17 @@
 .learn_content{
     font-size: 1.5rem;
     text-align: justify;
+
+}
+
+.learn_info_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.learn_info_block_r{
+    flex-direction: column-reverse;
 }
