@@ -48,6 +48,18 @@
             </div>
 
         </div>
+
+       <div class ="row">
+            <div class = "col-8">
+                <!-- the breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+       </div>
         <div class = "row">
             <div class = "col-12">
                 <h1 class="text-highlight">It Takes a Team to Save a Species</h1>
@@ -108,16 +120,99 @@
             </div>
         </div>
         <!-- statics -->
+        <div class = "row flex-row">
+            <div class = "col-4 d-flex justify-content-center align-items-center">
+                <!-- a card -->
+                <div class="card" style="width: 33rem;">
+                    <img src="images/about_cleaning.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rescued</h5>
+                        <h2 class="card-title text-highlight">12,000+</h2>
+                        <p class="card-text">Penguins From oil spills and environmental disasters, every life counts.</p>
+                        <!-- <a href="donate.html" class="btn btn-primary">Donate to Protect Their Food Source</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class = "col-4 d-flex justify-content-center align-items-center">
+                <!-- a card -->
+                <div class="card" style="width: 33rem;">
+                    <img src="images/about_feeding.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Provided</h5>
+                        <h2 class="card-title text-highlight">250,000+</h2>
+                        <p class="card-text">Meals to support recovery for penguins that cannot survive on their own.</p>
+                        <!-- <a href="donate.html" class="btn btn-primary">Donate to Clean Up Oil Spills</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class = "col-4 d-flex justify-content-center align-items-center">
+                <!-- a card -->
+                <div class="card" style="width: 33rem;">
+                    <img src="images/about_monitoring.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitoring</h5>
+                        <h2 class="card-title text-highlight">35+</h2>
+                        <p class="card-text">Worldwide research sites tracking, understanding, and preventing.</p>
+                        <!-- <a href="donate.html" class="btn btn-primary">Donate to Combat Climate Change</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "row" id = "mission">
+            <div class = "col-12">
+                <h1 class="text-highlight">What we do. Why it matters.</h1>
+            </div>
+        </div>
         <div class = "row">
-            <div class = "col-4">
-                statics here
+            <div class = "col-12">
+            <div class = "col-12">
+                <div class="accordion" id="missionAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#missionCollapseOne" aria-expanded="true" aria-controls="missionCollapseOne">
+                            Rapid Response & Cleaning
+                        </button>
+                        </h2>
+                        <div id="missionCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#missionAccordion">
+                        <div class="accordion-body">
+                            When oil spills and pollution strike, time is everything.
+                            Our teams act immediately to rescue affected penguins, carefully remove toxic substances,
+                            and restore their ability to survive in the wild.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#missionCollapseTwo" aria-expanded="false" aria-controls="missionCollapseTwo">
+                            Feeding & Rehabilitation
+                        </button>
+                        </h2>
+                        <div id="missionCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#missionAccordion">
+                        <div class="accordion-body">
+                            Many rescued penguins are too weak to hunt on their own.
+                            We provide consistent care, nutrition, and rehabilitation support
+                            until they regain strength and are ready to return to their natural habitat.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#missionCollapseThree" aria-expanded="false" aria-controls="missionCollapseThree">
+                            Monitoring & Research
+                        </button>
+                        </h2>
+                        <div id="missionCollapseThree" class="accordion-collapse collapse" data-bs-parent="#missionAccordion">
+                        <div class="accordion-body">
+                            Long-term protection requires understanding.
+                            We track penguin populations, study environmental threats,
+                            and use data to prevent future crises before they happen.
+                            <!-- <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class = "col-4">
-                statics here
-            </div>
-            <div class = "col-4">
-                statics here
-            </div>
+            </div>            
         </div>
         <!-- some show down -->
         <div class = "row" id = "team">
@@ -129,40 +224,67 @@
         <div class = "row">
             <!-- team members -->
             <div class = "col-12">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="teamAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#teamCollapseOne" aria-expanded="true" aria-controls="teamCollapseOne">
+                            Field Rescuers
                         </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div id="teamCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#teamAccordion">
                         <div class="accordion-body">
-                            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            The first to respond when disaster strikes.
+                            Our rescuers operate on the frontlines, saving penguins from oil spills,
+                            pollution, and life-threatening environments.
+                            <!-- <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teamCollapseTwo" aria-expanded="false" aria-controls="teamCollapseTwo">
+                            Care Specialists
                         </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="teamCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#teamAccordion">
                         <div class="accordion-body">
-                            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Behind every rescued penguin is a team providing daily care.
+                            From feeding to rehabilitation, they ensure every penguin has a chance to recover.
+                            <!-- <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teamCollapseThree" aria-expanded="false" aria-controls="teamCollapseThree">
+                            Researchers & Scientists
                         </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="teamCollapseThree" class="accordion-collapse collapse" data-bs-parent="#teamAccordion">
                         <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            They turn data into protection.
+                            By studying penguin behavior and environmental changes,
+                            they help us understand threats and design better solutions.
+                            <!-- <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                        </div>
+                        </div>
+                    </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teamCollapseFour" aria-expanded="false" aria-controls="teamCollapseFour">
+                            You
+                        </button>
+                        </h2>
+                        <div id="teamCollapseFour" class="accordion-collapse collapse" data-bs-parent="#teamAccordion">
+                        <div class="accordion-body">
+                            None of this is possible without you.
+                            
+                            Whether through donations, sharing our mission, or taking action,
+                            you are part of the team that makes change possible.
+
+                            <!-- the cta buttons  -->
+
+                            <!-- <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
                         </div>
                         </div>
                     </div>
@@ -170,65 +292,35 @@
             </div>
             <!-- team members end -->
         </div>
-        <div class = "row" id = "mission">
-            <div class = "col-12">
-                <h1 class="text-highlight">Our Mission</h1>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-12">
-            <div class = "col-12">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>            
-        </div>
         <!-- footer -->
         <div class = "row">
             <div class = "col-6">
-                footer
+                <h1>Questions or Concerns? Email us!</h1>
+                <!-- questionnaire -->
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <a href = 'thankyou.html'>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </a>
+                </div>
             </div>
-            <div class = "col-6">
-                <i class="bi bi-universal-access"></i>
-                <i class="bi bi-universal-access"></i>
-                <i class="bi bi-universal-access"></i>
-            </div>                  
+            <div class="col-md-6">
+                <h1>Join the Mailing List</h1>
+               <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2">
+                    <a href = '#'>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+                    </a>
+                </div>
+                
+            </div>                   
         </div>
     </div>
     <!-- prepare bootstrap -->
