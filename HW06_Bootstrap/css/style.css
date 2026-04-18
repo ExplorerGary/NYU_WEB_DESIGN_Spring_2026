@@ -95,6 +95,25 @@ body {
     color: var(--blue-800);
 }
 
+#learn_section_nav{
+    border: 1px solid var(--blue-700);
+    background: var(--blue-700);
+    color: var(--white);
+}
+#learn_section_nav:hover,
+#learn_section_nav:focus {
+    border-color: var(--blue-500);
+    background: var(--blue-500);
+    color: var(--white);
+}
+
+#learn_section_nav:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(127, 159, 209, 0.45);
+}
+
+
+
+
 #carouselExampleCaptions {
     height: var(--hero-height-desktop);
     max-height: var(--hero-height-desktop);
