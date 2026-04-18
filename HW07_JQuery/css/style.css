@@ -310,3 +310,8 @@ letter-spacing: 2px;
 .interaction_button:hover {
   color: var(--NYU--ultra-violet);
 }
+
+.the_qilin{
+  position: relative;
+  transition: transform 0.3s ease;
+}
