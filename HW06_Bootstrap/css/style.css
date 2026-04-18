@@ -324,6 +324,48 @@ body {
     flex-direction: column-reverse;
 }
 
+/* about accordion */
+#missionAccordion,
+#teamAccordion {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--glow-soft);
+}
+
+#missionAccordion .accordion-item,
+#teamAccordion .accordion-item {
+    border: 1px solid var(--gray-200);
+    background: linear-gradient(180deg, #fbfdff 0%, #f3f8ff 100%);
+}
+
+#missionAccordion .accordion-button,
+#teamAccordion .accordion-button {
+    background: linear-gradient(180deg, #edf4ff 0%, #dfe9fb 100%);
+    color: var(--blue-900);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#missionAccordion .accordion-button:not(.collapsed),
+#teamAccordion .accordion-button:not(.collapsed) {
+    background: linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 100%);
+    color: var(--white);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#missionAccordion .accordion-button:focus,
+#teamAccordion .accordion-button:focus {
+    border-color: var(--blue-300);
+    box-shadow: 0 0 0 0.2rem rgba(127, 159, 209, 0.45);
+}
+
+#missionAccordion .accordion-body,
+#teamAccordion .accordion-body {
+    background: linear-gradient(180deg, #f9fcff 0%, #eef4ff 100%);
+    color: var(--gray-900);
+    font-size: 2rem;
+}
+
 /* donation */
 .donate-panel {
     border: 1px solid rgba(127, 159, 209, 0.35);
@@ -474,4 +516,73 @@ body {
     color: var(--gray-700);
 }
 
+#staticBackdrop .modal-footer .btn {
+    border-radius: 10px;
+    font-weight: 700;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
 
+#staticBackdrop .modal-footer .btn.btn-secondary {
+    border: 1px solid var(--blue-300);
+    background: linear-gradient(180deg, #eef4ff 0%, #dde8ff 100%);
+    color: var(--blue-800);
+}
+
+#staticBackdrop .modal-footer .btn.btn-secondary:hover,
+#staticBackdrop .modal-footer .btn.btn-secondary:focus {
+    border-color: var(--blue-500);
+    background: linear-gradient(180deg, #e1ebff 0%, #cfdfff 100%);
+    color: var(--blue-900);
+}
+
+#staticBackdrop .modal-footer .btn.btn-primary {
+    border: 1px solid var(--blue-500);
+    background: linear-gradient(90deg, var(--blue-500) 0%, #4a70de 100%);
+    color: var(--white);
+}
+
+#staticBackdrop .modal-footer .btn.btn-primary:hover,
+#staticBackdrop .modal-footer .btn.btn-primary:focus {
+    border-color: var(--blue-700);
+    background: linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 100%);
+    color: var(--white);
+}
+
+
+#submitBtn {
+    border: 1px solid var(--blue-500);
+    background: linear-gradient(90deg, var(--blue-500) 0%, #4a70de 100%);
+    color: var(--white);
+    display: block;
+    width: fit-content;
+    padding: 0.65rem 2.2rem;
+    font-size: 1.95rem;
+    border-radius: 12px;
+    margin: 0 auto;
+    text-decoration: none !important;
+}
+
+#submitBtn:hover,
+#submitBtn:focus {
+    border-color: var(--blue-700);
+    background: linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 100%);
+    color: var(--white);
+}
+
+a:has(> #submitBtn),
+a:has(> #submitBtn):hover,
+a:has(> #submitBtn):focus,
+#submitBtn,
+#submitBtn:hover,
+#submitBtn:focus {
+    text-decoration: none !important;
+}
+
+#staticBackdrop .modal-footer .btn:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(127, 159, 209, 0.5);
+}
+
+
+.no-gap-top{
+    margin-top: 0 !important;
+}
