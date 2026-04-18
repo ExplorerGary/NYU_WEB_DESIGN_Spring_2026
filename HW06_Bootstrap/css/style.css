@@ -189,6 +189,7 @@ body {
     color: var(--blue-800);
     letter-spacing: 0.2px;
     margin-bottom: 0.3rem;
+    text-align: center;
 }
 
 
@@ -232,7 +233,9 @@ body {
 }
 
 .card-btn{
-    justify-content: center;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 
