@@ -48,7 +48,7 @@ div footer{
   align-items: center;      
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: var(--NYU--violet);
+  background: linear-gradient(105deg, var(--NYU--violet) 0%, var(--NYU--ultra-violet) 72%, var(--the-finals-red) 100%);
   border: calc(var(--debug) * 3px) solid var(--debug-green); /* debug */
 
 }
@@ -118,7 +118,7 @@ letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--NYU--violet);   /* 和顶部一致 */
+  background: linear-gradient(105deg, var(--NYU--violet) 0%, var(--NYU--ultra-violet) 72%, var(--the-finals-red) 100%); 
     padding: 20px 40px;
     margin-top: 80px;
 }
@@ -314,4 +314,61 @@ letter-spacing: 2px;
 .the_qilin{
   position: relative;
   transition: transform 0.3s ease;
+}
+
+/* oracle buttons */
+.pray_qilin_btn,
+.get_oracle_btn {
+  width: 100%;
+  margin: 8px 0;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(78, 21, 134, 0.22);
+  transition: transform 0.18s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.pray_qilin_btn {
+  background: linear-gradient(110deg, var(--NYU--violet) 0%, var(--NYU--ultra-violet) 100%);
+}
+
+.get_oracle_btn {
+  background: linear-gradient(110deg, var(--NYU--ultra-violet) 0%, var(--the-finals-red) 100%);
+}
+
+.pray_qilin_btn:hover,
+.pray_qilin_btn:focus,
+.get_oracle_btn:hover,
+.get_oracle_btn:focus {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(78, 21, 134, 0.28);
+  filter: saturate(1.08);
+}
+
+.pray_qilin_btn:focus-visible,
+.get_oracle_btn:focus-visible {
+  outline: 3px solid rgba(124, 34, 216, 0.35);
+  outline-offset: 2px;
+}
+
+.pray_qilin_btn:disabled,
+.get_oracle_btn:disabled {
+  opacity: 0.52;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  filter: grayscale(0.12);
+}
+
+@media (max-width: 768px) {
+  .pray_qilin_btn,
+  .get_oracle_btn {
+    font-size: 1.5rem;
+    padding: 12px 16px;
+  }
 }
