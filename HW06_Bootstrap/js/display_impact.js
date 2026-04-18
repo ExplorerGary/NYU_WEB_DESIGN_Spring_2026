@@ -13,6 +13,9 @@ $(document).ready(function() {
 
   $(".donBtn").on("click", function() {
 
+    $(".donBtn").removeClass("is-selected");
+    $(this).addClass("is-selected");
+
     selectedAmount = parseInt($(this).attr("id").replace("donBtn", ""));
     
 
@@ -20,12 +23,12 @@ $(document).ready(function() {
     
 
     if (selectedAmount === 0) {
-      $("#donation_impact").empty().append(`<h1>${message}</h1>`);
+      $("#donation_impact").empty().append(`<p class="impact-text">${message}</p>`);
     } else {
-      $("#donation_impact").empty().append(`<h1>$${selectedAmount} - ${message}</h1>`);
+      $("#donation_impact").empty().append(`<p class="impact-text"><span class="impact-amount">$${selectedAmount}</span> - ${message}</p>`);
     }
   });
 
-  $("#donation_impact").append(`<h1>${donationImpact[0]}</h1>`);
+  $("#donation_impact").append(`<p class="impact-text">${donationImpact[0]}</p>`);
 });
 
