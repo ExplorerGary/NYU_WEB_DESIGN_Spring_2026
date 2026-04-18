@@ -46,16 +46,16 @@ $(document).ready(function() {
 
         qilin.stop(true, true);
 
-        // Step 0: hide first.
+
         qilin.fadeOut(120, function() {
-            // Step 1: shrink while hidden, then show again.
+
             qilin.css({
                 transition: "none",
                 transform: "scale(0.1) rotate(0deg)"
             });
 
             qilin.fadeIn(500, function() {
-                // Step 2: continue the original animation.
+
                 setTimeout(function() {
                     qilin.css({
                         transition: "transform 1.5s ease-in-out",
