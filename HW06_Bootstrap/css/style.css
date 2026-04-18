@@ -191,6 +191,9 @@ body {
     margin-bottom: 0.3rem;
 }
 
+
+
+
 .text-highlight {
     color: var(--penguin-blue) !important;
     font-weight: 1000;
@@ -206,6 +209,8 @@ body {
     margin-bottom: 1.15rem;
 }
 
+
+
 .row.flex-row .card .btn.btn-primary {
     border: 1px solid var(--blue-700);
     background: var(--blue-700);
@@ -220,6 +225,21 @@ body {
 }
 
 
+.footer{
+    background: linear-gradient(90deg, var(--blue-900) 0%, var(--blue-700) 100%) !important;
+    color: var(--white);
+    padding: 1.5rem 0;  
+}
+
+.card-btn{
+    justify-content: center;
+}
+
+
+.bi {
+    font-size: 4rem;
+    color: var(--white);
+}
 /* learn */
 .learn_content{
     font-size: 1.5rem;
