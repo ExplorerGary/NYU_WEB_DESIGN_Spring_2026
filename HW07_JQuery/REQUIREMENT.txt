@@ -1,0 +1,36 @@
+In this final assignment, you will add interactivity to one of the three websites you have built throughout the semester using the jQuery library.
+
+You will use jQuery to apply effects and add dynamic functionality to elements on your website, making it more engaging for users.
+
+Grading:
+
+This assignment is worth 10 points.
+
+Site Selection (1 point)
+A new version of the website chosen from any of the previous assignments 
+
+Setup (2 points)
+Proper inclusion of the jQuery library and a separate .js file containing custom jQuery code 
+
+JQuery Boilerplate (1 point)
+Use of the jQuery ready event to ensure the script runs after the page has loaded 
+
+JQuery Element Selector (1 point)
+Proper use of jQuery syntax to access and manipulate elements on the page 
+
+JQuery Effects (1 point)
+Use of jQuery effects such as show/hide, fadeIn, FadeOut, and animate
+
+JQuery Dynamic Content (1 point)
+Use of jQuery to add Dynamic Content using .html, or .append 
+
+JQuery Dynamic Styling (1 point)
+Use of jQuery to add Dynamic Styling using .css, or .addClass
+
+Syntax (1 points)
+Proper commenting and organization of code 
+
+Publishing (1 point):
+Upload your website to i6 web server to publish to the world wide web.
+
+Test your files thoroughly again using Firefox, Safari, or Chrome before you submit. Make sure all your images load and that all hyperlinks function as they should.
