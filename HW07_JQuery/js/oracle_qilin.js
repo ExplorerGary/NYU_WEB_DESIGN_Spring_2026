@@ -41,33 +41,38 @@ $(document).ready(function() {
     function printAnimation() {
         var qilin = $(".the_qilin");
 
-        // 防止叠加
         if (qilin.hasClass("animating")) return;
         qilin.addClass("animating");
 
         qilin.stop(true, true);
 
-        // Step 1: 先缩小
-        qilin.css({
-            transition: "transform 0.3s ease",
-            transform: "scale(0.1) rotate(0deg)"
+        // Step 0: hide first.
+        qilin.fadeOut(120, function() {
+            // Step 1: shrink while hidden, then show again.
+            qilin.css({
+                transition: "none",
+                transform: "scale(0.1) rotate(0deg)"
+            });
+
+            qilin.fadeIn(500, function() {
+                // Step 2: continue the original animation.
+                setTimeout(function() {
+                    qilin.css({
+                        transition: "transform 1.5s ease-in-out",
+                        transform: "scale(1.5) rotate(720deg)"
+                    });
+                }, 50);
+
+                setTimeout(function() {
+                    qilin.css({
+                        transition: "transform 0.5s ease",
+                        transform: "scale(1) rotate(0deg)"
+                    });
+
+                    qilin.removeClass("animating");
+                }, 1700);
+            });
         });
-
-        setTimeout(function() {
-            qilin.css({
-                transition: "transform 1.5s ease-in-out",
-                transform: "scale(1.5) rotate(720deg)"
-            });
-        }, 300);
-
-        setTimeout(function() {
-            qilin.css({
-                transition: "transform 0.5s ease",
-                transform: "scale(1) rotate(0deg)"
-            });
-
-            qilin.removeClass("animating");
-        }, 2000);
     }
     function play() {
 

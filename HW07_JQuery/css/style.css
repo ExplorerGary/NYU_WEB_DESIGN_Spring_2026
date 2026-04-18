@@ -77,18 +77,24 @@ div footer{
 .nav_item a {
   text-decoration: none;
   color: white;
-font-style: italic;
-letter-spacing: 2px;
+  font-style: italic;
+  letter-spacing: 2px;
+  transition: text-shadow 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
 }
 .nav_item a:focus {
-  color: var(--NYU--ultra-violet);
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 18px rgba(255, 255, 255, 0.55);
+  filter: brightness(1.08);
 }
 .nav_item a:hover {
-  color: var(--NYU--ultra-violet);
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9), 0 0 18px rgba(255, 255, 255, 0.55);
+  filter: brightness(1.08);
 }
 .nav_item a:active {
-  color: var(--NYU--ultra-violet);
-  font-size: 150%;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 255, 255, 0.65);
+  filter: brightness(1.12);
 }
 
 
@@ -314,6 +320,55 @@ letter-spacing: 2px;
 .the_qilin{
   position: relative;
   transition: transform 0.3s ease;
+}
+
+/* oracle ball on home page */
+.ball {
+  margin-top: 20px;
+  width: clamp(64px, 10vw, 144px);
+  aspect-ratio: 1 / 1;
+  margin: 10px auto 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 30% 25%, #a667ff 0%, var(--NYU--ultra-violet) 45%, var(--NYU--violet) 100%);
+  border: 3px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 8px 18px rgba(255, 255, 255, 0.26), 0 10px 22px rgba(78, 21, 134, 0.35);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.ball a {
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  outline: none;
+}
+
+.ball a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.ball:hover,
+.ball:focus-within {
+  transform: translateY(-2px);
+  box-shadow: inset 0 10px 22px rgba(255, 255, 255, 0.3), 0 0 20px rgba(124, 34, 216, 0.75), 0 0 44px rgba(124, 34, 216, 0.55);
+}
+
+.ball:hover a img,
+.ball:focus-within a img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.7));
+  transform: scale(1.02);
+}
+
+.ball a:focus-visible {
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.45);
 }
 
 /* oracle buttons */
