@@ -285,9 +285,9 @@ body {
 
 .footer .btn.btn-outline-secondary:hover,
 .footer .btn.btn-outline-secondary:focus {
-    border-color: var(--white);
-    background: var(--white);
-    color: var(--blue-800);
+    border-color: var(--blue-700);
+    background: linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 100%);
+    color: var(--white);
 }
 
 .footer .btn.btn-outline-secondary:focus-visible {
@@ -550,13 +550,21 @@ body {
 
 
 #submitBtn {
+
+    border-color: var(--blue-300);
+    background: var(--blue-100);
+    color: var(--blue-900);
+    /* font-weight: 700; */
+
+
     border: 1px solid var(--blue-500);
-    background: linear-gradient(90deg, var(--blue-500) 0%, #4a70de 100%);
-    color: var(--white);
+    /* background: linear-gradient(90deg, var(--blue-500) 0%, #4a70de 100%); */
+    /* color: var(--white); */
     display: block;
     width: fit-content;
     padding: 0.65rem 2.2rem;
     font-size: 1.95rem;
+    font-weight: 700;
     border-radius: 12px;
     margin: 0 auto;
     text-decoration: none !important;
