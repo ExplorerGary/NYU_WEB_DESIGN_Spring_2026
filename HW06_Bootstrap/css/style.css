@@ -639,8 +639,4 @@ a:has(> #submitBtn):focus,
     .bi {
     font-size: 2rem;
     }
-    /* .donBtnRow{
-        flex-direction: column !important;
-        gap: 0.75rem;
-    } */
 }
