@@ -340,11 +340,21 @@ body {
     letter-spacing: -0.01em;
 }
 
-.donate-subtitle {
+/* .donate-subtitle {
     color: var(--gray-700) !important;
     font-size: clamp(1.05rem, 1.9vw, 1.7rem);
     margin-left: 0.35rem;
+    margin-top: 0.25rem;
+} */
+
+.donate-subtitle {
+    display: block;
+    color: var(--gray-700) !important;
+    font-size: clamp(1.05rem, 1.9vw, 1.7rem);
+    margin-left: 0;
+    margin-top: 0.9rem;
 }
+
 
 .donBtn{
     width: fit-content;
@@ -450,3 +460,18 @@ body {
         padding: 0.6rem 1.4rem;
     }
 }
+
+.modal-header{
+    background: linear-gradient(90deg, var(--blue-700) 0%, var(--blue-500) 100%) !important;
+    color: var(--white);
+}
+.modal-title{
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.modal-body{
+    font-size: 1.15rem;
+    color: var(--gray-700);
+}
+
+
