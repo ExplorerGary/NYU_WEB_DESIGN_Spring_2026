@@ -37,6 +37,10 @@ body {
     border: none;
 }
 
+.container-fluid > .row + .row {
+    margin-top: 0.75rem;
+}
+
 /* Topology Layer 2: navigation system */
 .the_nav {
     border: none;
@@ -94,6 +98,22 @@ body {
 
 #carouselExampleCaptions .carousel-item {
     height: var(--hero-height-desktop);
+}
+
+.carousel-caption {
+    bottom: 10%;
+}
+.carousel-caption h5 {
+    font-size: clamp(1.75rem, 3vw, 2.75rem);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -0.02em;
+}
+.carousel-caption p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .slideImage {
