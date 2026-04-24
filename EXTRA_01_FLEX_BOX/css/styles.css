@@ -8,9 +8,73 @@
   color: #fff;
   background-color: #5995DA;  /* Blue */
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
 }
 
 .menu {
   border: 1px solid #fff;  /* For debugging */
   width: 900px;
+  /* additions */
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+}
+
+
+.links {
+  border: 1px solid #fff;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: stretch;  */
+  /* align-items: baseline; */
+
+}
+
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}
+
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
 }
